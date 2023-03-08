@@ -1,7 +1,9 @@
 .edu--container--main{
-    height: 100vh;
+    height: 80vh;
     justify-content: center;
     display: flex;
+    padding-top: 20px;
+    padding-bottom: 30px ;
     
 }
 .edu--container--right{
@@ -14,13 +16,15 @@
 }
 
 .edu--wrap--side{
-    /* border: 1px solid rgb(231, 231, 231); */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-   
-    /* padding: 0px; */
+    padding-bottom: 15px;
 }
 .edu--container--right .box{
     padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px ;
+    
+    
 }
 
 .the--main--edu{
@@ -50,6 +54,22 @@
 }
 
 
+.edu--container--right .box p{
+    margin: 0px;
+}
+.edu--container--right .box h4{
+    margin: 8px 0px;
+    
+}
+
+.edu--lessname{
+    font-weight: 100;
+    font-size: small;
+}
+
+
+
+
 @media screen and (max-width:768px) {
     .the--main--edu{ 
         width: 100%;   
@@ -58,4 +78,42 @@
     .edu--container--right .box{
         padding-right: 5px;
     }
+    .edu--images{
+        padding-bottom: 40px;
+    }
+    
+
 }
+
+
+@media screen and (max-width:530px) {
+
+    .edu--container--main{
+        padding-bottom: 140px;
+    }
+    .edu--images{
+        padding-bottom: 70px;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    .edu--container--main{
+        padding-bottom: 200px;
+    }
+    .edu--images{
+        padding-bottom: 90px;
+    }
+
+}
+
+@media screen and (max-width:412px) {
+    .edu--container--main{
+        padding-bottom: 250px;
+    }
+    .edu--images{
+        padding-bottom: 120px;
+    }
+
+}
+
