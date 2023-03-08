@@ -1,0 +1,13 @@
+.hero--main{
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    background-color: #f2a285;
+    
+}
+
+.hero{
+    justify-content: space-around;
+    padding: 50px;
+}

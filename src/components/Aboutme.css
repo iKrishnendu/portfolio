@@ -1,0 +1,83 @@
+.about--text{
+    text-align: center;
+}
+.about--image{
+    flex: 40%;
+    
+}
+
+.about--card{
+    width: 40% ;
+    /* padding: 3rem; */
+    flex: 60%;
+    border: 1px solid rgb(231, 231, 231);
+}
+
+.card--header{
+    background-color: rgb(240, 240, 240);
+
+}
+.about--body{
+    padding: 10px;
+
+}
+img{
+    height: 15rem;
+    width: auto;
+    border-radius: 150px;
+    /* border: 1px solid red; */
+
+}
+
+.aboutme{
+    display: flex;
+    flex-direction: row;
+    /* height: 80vh; */
+    /* justify-content: space-between; */
+    padding: 110px 120px;
+    
+}
+
+
+.dot {
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0.2rem;
+  }
+.red{
+    background-color: red;
+}
+.orange{
+    background-color: orange;
+}
+.green{
+    background-color: green;
+}
+
+
+@media screen and (max-width:768px) {
+    .aboutme{
+        
+        flex-direction: column;
+        
+    }
+    .about--image{
+        text-align: center;
+        padding-bottom: 40px;
+        
+    }
+    .about--card{
+        width: 98%;
+        
+       
+    }
+
+
+    .aboutme{
+        padding: 30px 10px;
+    }
+
+
+}
