@@ -99,20 +99,20 @@
 @media screen and (max-width:450px) {
 
     .edu--container--main{
-        padding-bottom: 200px;
+        padding-bottom: 180px;
     }
     .edu--images{
-        padding-bottom: 90px;
+        padding-bottom: 80px;
     }
 
 }
 
 @media screen and (max-width:412px) {
     .edu--container--main{
-        padding-bottom: 250px;
+        padding-bottom: 230px;
     }
     .edu--images{
-        padding-bottom: 120px;
+        padding-bottom: 100px;
     }
 
 }
