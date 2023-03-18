@@ -40,7 +40,7 @@ function Education() {
                             <p>I am now searching a small Internship for brush my skill.</p>
                     </div>
                     <div className='box'>
-                            <h4>Techno India, Batanagar <span className='edu--lessname'>2021-2025 , <i>urrenty 9.5 cgpa</i></span></h4>
+                            <h4>Techno India, Batanagar <span className='edu--lessname'>2021-2025 , <i>currenty 9.5 cgpa</i></span></h4>
                             {/* <p>Bachelor of Technology. <span> Computer Science & Engineering</span></p> */}
                             <p>I am currently studing B.Tech CSE at Techno India Batanagar to explore my world & also enjoy my college life. 
                                 I am also actively participate in college events & Tech Fest.</p>
@@ -48,7 +48,7 @@ function Education() {
                     </div>
                     <div className='box'>
                             <h4>Lakshya High School <span className='edu--lessname'>2019-2021 , <i> 78 percent </i></span></h4>
-                            <p>I have completed my higher education from HKIS with major subjects as Physics,Chemistry & Maths with 85% merit in WBBHSE board.</p>
+                            <p>I have completed my higher education from LHS with major subjects as Physics,Chemistry & Maths with 78% merit in WBCHSE board.</p>
                     </div>
                     <div className='box'>
                             <h4>Vivekananda Mission Asram Sikshayatan <span className='edu--lessname'>2011-2019 , <i> 80 percent </i></span></h4>
