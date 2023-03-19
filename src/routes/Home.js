@@ -3,7 +3,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Aboutme from '../components/Aboutme'
-import MyTools from '../components/MyTools'
+import ContactMe from '../components/ContactMe'
 
 
 
@@ -14,7 +14,8 @@ const Home = () => {
       <Navbar/>
       <Hero />
       <Aboutme/>
-      <MyTools/>
+      
+      <ContactMe/>
       <Footer/>
       
     </div>

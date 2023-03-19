@@ -2,7 +2,7 @@ import React from 'react'
 import "./Experience.css"
 
 
-const Experience = (props) => {
+const Experience = () => {
   return (
     <>
     <div className='experience--tab'>

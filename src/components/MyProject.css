@@ -1,0 +1,54 @@
+.myproject--component{
+    text-align: center;
+    /* height: 120vh; */
+}
+.myproject--cards{
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    
+}
+.myproject--card{
+    height: 85%;
+    width: 250px;
+    background-color: rgb(174, 210, 174);
+    padding: 20px;
+    
+    margin: 20px;
+    border-radius: 10px;
+   
+}
+
+.project--image{
+    border-radius: 10px;
+    height: 40%;
+    width: 100%;
+}
+.myproject--buttons{
+    display: flex;
+    justify-content: center;
+    /* padding: 20px; */
+}
+.myproject--button{
+    padding: 6px;
+    margin: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .myproject--cards{
+        /* background-color: aquamarine; */
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        
+    }
+
+    .project--image{
+        height: 150px;
+        width: 100%;
+    }
+}

@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import Experience from '../components/Experience'
 import ExperienceData from '../components/ExperienceData'
 import Education from '../components/Education'
+import MyTools from '../components/MyTools'
 
 
 const About = () => {
@@ -13,6 +14,7 @@ const About = () => {
     <Navbar/>
     <Aboutme/>
     <Experience/>
+    <MyTools/>
     <Education/>
     <Footer/>
     

@@ -12,7 +12,16 @@
     flex: 60%;
     /* border: 1px solid rgb(231, 231, 231); */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
 }
+
+.about--card:hover{
+    transform: scale(1.02);
+    /* background: #ff800a; */
+    z-index: 2;
+    /* box-shadow: 2px 2px 2px #000;    */
+}
+
 
 .card--header{
     background-color: rgb(240, 240, 240);
