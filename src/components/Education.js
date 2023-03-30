@@ -1,6 +1,10 @@
 import React from 'react'
 import { MdWork } from "react-icons/md";
 import Logo from "../assets/logo.png"
+import Vmas from "../assets/vmas.jpg"
+import Lhs from "../assets/lhs.jpg"
+import Tib from "../assets/tib.jpg"
+import Intern from "../assets/internship.png"
 import "./Education.css"
 
 function Education() {
@@ -14,16 +18,16 @@ function Education() {
 
         <div className='edu--container--left'>
                 <div className='edu--img'>
-                    <img src={Logo} className='edu--images'/>
+                    <img src={Intern} className='edu--images'/>
                 </div>
                 <div className='edu--img'>
-                    <img src={Logo} className='edu--images'/>
+                    <img src={Tib} className='edu--images'/>
                 </div>
                 <div className='edu--img'>
-                    <img src={Logo} className='edu--images'/>
+                    <img src={Lhs} className='edu--images'/>
                 </div>
                 <div className='edu--img'>
-                    <img src={Logo} className='edu--images'/>
+                    <img src={Vmas} className='edu--images'/>
                 </div>
         </div>
 

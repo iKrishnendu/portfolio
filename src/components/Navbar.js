@@ -20,27 +20,27 @@ const Navbar = () => {
           <li><Link to={"/"}><BiHomeSmile 
             color="black"
             onMouseOver={({target})=>target.style.color="Red"}
-            onMouseOut={({target})=>target.style.color="black"}/></Link></li>
+            onMouseOut={({target})=>target.style.color="black"}/><p className='nav--names'>Home</p></Link></li>
           <li><Link to={"/about"}><RxAvatar 
             color="black"
             
             onMouseOver={({target})=>target.style.color="Red"}
-            onMouseOut={({target})=>target.style.color="black"}/></Link></li>
+            onMouseOut={({target})=>target.style.color="black"}/><p className='nav--names'>About</p></Link></li>
           <li><Link to={"/project"}><BsLaptop 
             color="black"
             
             onMouseOver={({target})=>target.style.color="Red"}
-           onMouseOut={({target})=>target.style.color="black"}/></Link></li>
+           onMouseOut={({target})=>target.style.color="black"}/><p className='nav--names'>Project</p></Link></li>
           <li><Link to={"/contact"}><MdContacts 
             color="black"
             
             onMouseOver={({target})=>target.style.color="Red"}
-            onMouseOut={({target})=>target.style.color="black"}/></Link></li>
+            onMouseOut={({target})=>target.style.color="black"}/><p className='nav--names'>Contact</p></Link></li>
           <li><Link to={"/blogs"}><TfiWrite 
             color="black"
             
             onMouseOver={({target})=>target.style.color="Red"}
-            onMouseOut={({target})=>target.style.color="black"}/></Link></li>
+            onMouseOut={({target})=>target.style.color="black"}/><p className='nav--names'>Blog</p></Link></li>
         </ul>
       </div>
       
