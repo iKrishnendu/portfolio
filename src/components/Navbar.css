@@ -11,6 +11,7 @@
     box-shadow: 5px 10px 8px #888888;
     overflow: hidden;
     border: 1px solid black;
+    z-index: 3;
 }
 
 .nav--bar{

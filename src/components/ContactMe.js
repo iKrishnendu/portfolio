@@ -13,10 +13,10 @@ function ContactMe() {
         <h1>Finde Me On</h1>
         <p>Feel Free to connect me</p>
         <div className='Social-contact-me-component'>
-            <div><Link to='https://github.com/iKrishnendu'><BsGithub/></Link></div>
-            <div><Link to='https://twitter.com/Krishnendu_in'><BsTwitter/></Link></div>
-            <div><Link to='https://www.linkedin.com/in/krishnendusahoo/'><FaLinkedinIn/></Link></div>  
-            <div><Link to='https://www.instagram.com/i.m.krishnendu/'><BsInstagram/></Link></div>
+            <div><Link to='https://github.com/iKrishnendu'><BsGithub color="black"/></Link></div>
+            <div><Link to='https://twitter.com/Krishnendu_in'><BsTwitter color="black"/></Link></div>
+            <div><Link to='https://www.linkedin.com/in/krishnendusahoo/'><FaLinkedinIn color="black"/></Link></div>  
+            <div><Link to='https://www.instagram.com/i.m.krishnendu/'><BsInstagram color="black"/></Link></div>
             
         </div>
 
