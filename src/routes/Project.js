@@ -1,17 +1,18 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import MyProject from '../components/MyProject'
-import Footer from '../components/Footer'
+import React from "react";
+import Navbar from "../components/Navbar";
+import MyProject from "../components/MyProject";
+import Footer from "../components/Footer";
+import Github from "../components/Github";
 
 const Project = () => {
   return (
     <>
-    <MyProject/>
-    <Navbar/>
-    <Footer/>
-    
+      <MyProject />
+      <Github />
+      <Navbar />
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;

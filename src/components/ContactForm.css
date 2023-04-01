@@ -1,111 +1,99 @@
-.container{
-    
-    width: 35%;
-    margin: 50px auto;
-    background-color: #e1de9c;
-    -webkit-box-shadow: -5px 5px 0px 1px rgba(0, 0, 0, 0.250); 
-box-shadow: -5px 5px 0px 3px rgba(0, 0, 0, 0.609);
-border-radius: 10px;
-    border: 1px solid;
-
+.container {
+  width: 30%;
+  margin: 50px auto;
+  background-color: #e1de9c;
+  -webkit-box-shadow: -5px 5px 0px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: -5px 5px 0px 3px rgba(0, 0, 0, 0.609);
+  border-radius: 10px;
+  border: 1px solid;
 }
 
-
-h1{
-    text-align: center;
-    
+h1 {
+  text-align: center;
 }
-.form{
-    display: flex;
-    flex-direction: column;
-    
-    
+.form {
+  display: flex;
+  flex-direction: column;
 }
 
+.name {
+  margin: 25px auto;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  width: 90%;
+  height: 40px;
+}
 
-.name{
-    margin: 25px auto;
-    display: flex;
-    position: relative;
-    justify-content: space-between;
+input[type="text"] {
+  width: 76%;
+  /* margin: 0 20px 0 0; */
+  padding: 20px;
+  font-style: italic;
+  border: 2px solid #434753;
+  background: transparent;
+  color: #434753;
+  outline-color: #ffd6ba;
+}
+
+label[for="fullName"] {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  padding-left: 20px;
+}
+.fullName {
+  margin-left: 15px;
+}
+
+.email {
+  width: 70%;
+  margin: 0px 0 0px 35px;
+  padding: 15px;
+  margin-top: 10px;
+  font-style: italic;
+  border: 2px solid #434753;
+  background: transparent;
+  color: #434753;
+  outline-color: #ffd6ba;
+}
+
+label:not(#nameLabel) {
+  margin-left: 35px;
+  margin-bottom: 10px;
+}
+
+.message {
+  width: 70%;
+  margin: 0 35px;
+  height: 60px;
+  padding: 15px;
+  font-style: italic;
+  border: 2px solid #434753;
+  background: transparent;
+  color: #434753;
+  outline-color: #ffd6ba;
+  margin-top: 10px;
+}
+
+.send {
+  width: 100px;
+  margin: 30px 35px;
+  height: 40px;
+  border: none;
+  background: #434753;
+  color: #ffd6ba;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
     width: 90%;
-    height: 40px;
-} 
-
-input[type="text"]{
-    width: 76%;
-    /* margin: 0 20px 0 0; */
-    padding: 20px;
-    font-style: italic;    
-    border: 2px solid #434753;
-    background: transparent;
-    color: #434753;
-    outline-color: #FFD6BA;
-}
-
-label[for="fullName"]{
-    position: absolute;
-    top: -30px;
-    left: 0;
-    padding-left: 20px;
-}
-.fullName{
-    margin-left: 15px;
-}
-    
-
-.email{
-    width: 70%;
-    margin: 0px 0 0px 35px;
-    padding: 15px;
-    margin-top: 10px;
-    font-style: italic;
-    border: 2px solid #434753;
-    background: transparent;
-    color: #434753;
-    outline-color: #FFD6BA;
-
-}
-
-
-
-label:not(#nameLabel){
-    margin-left: 35px ;
-    margin-bottom: 10px;
-}
-
-.message{
-    width: 70%;
-    margin: 0 35px;
-    height: 60px;
-    padding: 15px;
-    font-style: italic;
-    border: 2px solid #434753;
-    background: transparent;
-    color: #434753;
-    outline-color: #FFD6BA;
-    margin-top: 10px;
-}
-
-.send{
-    width: 100px;
-    margin: 30px 35px;
-    height: 40px;
-    border: none;
-    background: #434753;
-    color: #FFD6BA;
-    cursor: pointer;
-}
-
-@media screen and (max-width:768px) {
-    .container{
-    
-        width: 90%;
-    }
-    label[for="fullName"]{
-        padding-left: 25px;
-    }
-    .fullName{
-        margin-left: 20px;
-    }
+  }
+  label[for="fullName"] {
+    padding-left: 25px;
+  }
+  .fullName {
+    margin-left: 20px;
+  }
 }
