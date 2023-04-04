@@ -1,28 +1,27 @@
 .mytool--Skill {
-    display: flex;
-    flex-wrap: wrap;
-    /* background-color: DodgerBlue; */
-    align-items: center;
-    justify-content: center;
-    transition: 0.2s;
-  }
-  
-.mytool--Skill > div {
-    background-color: #f1f1f1;
-    width: 100px;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-    transition: 0.2s;
-  }
-  
-.mytool--Skill>div:hover {
-    transform: scale(1.3);
-    z-index: 2;
-    box-shadow: 2px 2px 2px #000; 
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: DodgerBlue; */
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
 }
 
+.mytool--Skill > div {
+  background-color: var(--card-bg-clr);
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  transition: 0.2s;
+}
+
+.mytool--Skill > div:hover {
+  transform: scale(1.3);
+  z-index: 2;
+  box-shadow: 2px 2px 2px #000;
+}
 
 /* .mytool-div :hover{
     transform: scale(1.5);

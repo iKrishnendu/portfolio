@@ -1,14 +1,17 @@
-.hero--main{
-    text-align: center;
-    height: 100vh;
-    width: 100%;
-    justify-content: center;
-    background-color: #f2a285;
-    
+.hero--main {
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  background-color: var(--main-page-hero);
 }
 
-.hero{
-    justify-content: space-around;
-    padding: 50px;
-    padding-top: 90px;
+.hero {
+  justify-content: space-around;
+  padding: 50px;
+  padding-top: 90px;
+}
+
+.hero-1st-pic {
+  color: var(--text-clr);
 }

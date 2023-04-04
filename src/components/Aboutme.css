@@ -1,93 +1,81 @@
-.about--text{
-    text-align: center;
+.about--text {
+  text-align: center;
 }
-.about--image{
-    flex: 40%;
-    
-}
-
-.about--card{
-    width: 40% ;
-    /* padding: 3rem; */
-    flex: 60%;
-    /* border: 1px solid rgb(231, 231, 231); */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
+.about--image {
+  flex: 40%;
 }
 
-.about--card:hover{
-    transform: scale(1.02);
-    /* background: #ff800a; */
-    z-index: 2;
-    /* box-shadow: 2px 2px 2px #000;    */
+.about--card {
+  width: 40%;
+  /* padding: 3rem; */
+  flex: 60%;
+  /* border: 1px solid rgb(231, 231, 231); */
+
+  transition: 0.3s;
 }
 
-
-.card--header{
-    background-color: rgb(240, 240, 240);
-
-}
-.about--body{
-    padding: 10px;
-
-}
-img{
-    height: 15rem;
-    width: auto;
-    border-radius: 150px;
-    /* border: 1px solid red; */
-
+.about--card:hover {
+  transform: scale(1.02);
+  /* background: #ff800a; */
+  z-index: 2;
+  /* box-shadow: 2px 2px 2px #000;    */
 }
 
-.aboutme{
-    display: flex;
-    flex-direction: row;
-    /* height: 80vh; */
-    /* justify-content: space-between; */
-    padding: 110px 120px;
-    
+.card--header {
+  background-color: var(--card-aboutme-header);
+}
+.about--body {
+  padding: 10px;
+  height: 100%;
+  background-color: var(--card-bg-clr);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+img {
+  height: 15rem;
+  width: auto;
+  border-radius: 150px;
+  /* border: 1px solid red; */
 }
 
+.aboutme {
+  display: flex;
+  flex-direction: row;
+  /* height: 80vh; */
+  /* justify-content: space-between; */
+  padding: 110px 120px;
+}
 
 .dot {
-    height: 0.5rem;
-    width: 0.5rem;
-    border-radius: 50%;
-    display: inline-block;
-    margin: 0.2rem;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0.2rem;
+}
+.red {
+  background-color: red;
+}
+.orange {
+  background-color: orange;
+}
+.green {
+  background-color: green;
+}
+
+@media screen and (max-width: 768px) {
+  .aboutme {
+    flex-direction: column;
   }
-.red{
-    background-color: red;
-}
-.orange{
-    background-color: orange;
-}
-.green{
-    background-color: green;
-}
+  .about--image {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .about--card {
+    width: 98%;
+  }
 
-
-@media screen and (max-width:768px) {
-    .aboutme{
-        
-        flex-direction: column;
-        
-    }
-    .about--image{
-        text-align: center;
-        padding-bottom: 40px;
-        
-    }
-    .about--card{
-        width: 98%;
-        
-       
-    }
-
-
-    .aboutme{
-        padding: 30px 10px;
-    }
-
-
+  .aboutme {
+    padding: 30px 10px;
+  }
 }

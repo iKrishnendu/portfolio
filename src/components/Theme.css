@@ -1,0 +1,10 @@
+.theme-css {
+  /* float: right; */
+  position: fixed;
+  left: 80%;
+  right: 10%;
+  top: 1rem;
+  width: 10%;
+  z-index: 3;
+  overflow: hidden;
+}

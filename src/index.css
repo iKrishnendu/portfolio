@@ -1,14 +1,42 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.dark-theme {
+  --main-page-hero: #492e2e;
+  --p-clr: white;
+  --text-clr: white;
+  --btn-clr: white;
+  --body-bg-clr: black;
+  --card-bg-clr: #505050;
+  --card-aboutme-header: rgb(77, 66, 66);
+  --footer-clr: rgb(32, 32, 32);
+  /* --box-shadow: rgba(248, 248, 248, 0.95) 0px 3px 8px; */
+}
+.light-theme {
+  --main-page-hero: #f2a285;
+  --p-clr: black;
+  --text-clr: black;
+  --btn-clr: black;
+  --body-bg-clr: white;
+  --card-bg-clr: #f1f1f1;
+  --card-aboutme-header: rgb(195, 182, 182);
+  --footer-clr: snow;
+  --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+body {
+  background-color: var(--body-bg-clr);
+  color: var(--text-clr);
+}
+
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 html {
@@ -16,12 +44,12 @@ html {
   /* background-color: black; */
 }
 
-.particle{
+.particle {
   position: absolute;
   height: 100%;
   /* background-repeat:no-repeat; */
 
-  background-size:cover;
+  background-size: cover;
 
-  background-position:center;
+  background-position: center;
 }
