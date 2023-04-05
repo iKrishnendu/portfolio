@@ -19,20 +19,6 @@ function Theme() {
     setTheme(isDark ? "light" : "dark");
   };
   const isDark = theme === "dark";
-  // const [theme, setTheme] =
-  //   React.useState <
-  //   ThemeType >
-  //   ((): ThemeType => (dataTheme === "light" ? "light" : "dark"));
-
-  // React.useEffect(() => {
-  //   document.body.setAttribute("data-theme", theme);
-  // }, [theme]);
-
-  // const handleSwitchTheme = () => {
-  //   setTheme(isDark ? "light" : "dark");
-  // };
-
-  // const isDark = theme === "dark";
 
   return (
     <div className="theme-css">
@@ -40,7 +26,7 @@ function Theme() {
         <BsFillMoonFill />
       </button> */}
       <button className="switch-theme-button" onClick={handleSwitchTheme}>
-        {isDark ? <BsFillSunFill color="white" /> : <BsFillMoonFill />}
+        {isDark ? <BsFillSunFill /> : <BsFillMoonFill />}
       </button>
     </div>
   );

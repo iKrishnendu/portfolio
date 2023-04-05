@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* scrollbar-color: var(--scroll-color); */
 }
 
 body[data-theme="dark"] {
@@ -32,30 +33,21 @@ body[data-theme="light"] {
   --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-/* 
-.dark-theme {
-  --nav-bg-clr: rgb(57, 57, 57);
-  --main-page-hero: #171937;
-  --p-clr: white;
-  --text-clr: white;
-  --btn-clr: white;
-  --body-bg-clr: black;
-  --card-bg-clr: #555555;
-  --card-aboutme-header: rgb(77, 66, 66);
-  --footer-clr: rgb(32, 32, 32);
+::-webkit-scrollbar {
+  width: 10px;
 }
-.light-theme {
-  --nav-bg-clr: snow;
-  --main-page-hero: #f2a285;
-  --p-clr: black;
-  --text-clr: black;
-  --btn-clr: black;
-  --body-bg-clr: white;
-  --card-bg-clr: #f1f1f1;
-  --card-aboutme-header: rgb(195, 182, 182);
-  --footer-clr: snow;
-  --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-} */
+::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey; */
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #4577ce;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #224d96;
+}
 
 body {
   background-color: var(--body-bg-clr);
