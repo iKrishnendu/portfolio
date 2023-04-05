@@ -8,17 +8,18 @@ body {
 }
 
 .dark-theme {
+  --nav-bg-clr: rgb(57, 57, 57);
   --main-page-hero: #492e2e;
   --p-clr: white;
   --text-clr: white;
   --btn-clr: white;
   --body-bg-clr: black;
-  --card-bg-clr: #505050;
+  --card-bg-clr: #555555;
   --card-aboutme-header: rgb(77, 66, 66);
   --footer-clr: rgb(32, 32, 32);
-  /* --box-shadow: rgba(248, 248, 248, 0.95) 0px 3px 8px; */
 }
 .light-theme {
+  --nav-bg-clr: snow;
   --main-page-hero: #f2a285;
   --p-clr: black;
   --text-clr: black;

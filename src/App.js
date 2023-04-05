@@ -12,21 +12,24 @@ import ScrollToTop from "./components/ScrollToTop";
 import Design from "./components/Design";
 import Particle from "./components/Particle";
 import Theme from "./components/Theme";
+import { ThemeProvider } from "next-themes";
 
 function App() {
   return (
     <>
-      <div className="particle">{/* <Particle/>  */}</div>
+      <ThemeProvider>
+        <div className="particle">{/* <Particle/>  */}</div>
 
-      <ScrollToTop />
-      <Theme />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/project" element={<Project />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/blogs" element={<Blogs />} />
-      </Routes>
+        <ScrollToTop />
+        <Theme />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/project" element={<Project />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/blogs" element={<Blogs />} />
+        </Routes>
+      </ThemeProvider>
     </>
   );
 }

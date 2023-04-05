@@ -10,12 +10,16 @@
   flex-direction: column;
   margin-left: 10%;
   width: 100%;
+}
+.box--rightside {
   background-color: var(--card-bg-clr);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding-bottom: 15px;
 }
 
 .edu--wrap--side {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding-bottom: 15px;
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  /* padding-bottom: 15px; */
 }
 .edu--container--right .box {
   padding-left: 20px;
