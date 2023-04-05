@@ -7,6 +7,32 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body[data-theme="dark"] {
+  --nav-bg-clr: rgb(57, 57, 57);
+  --main-page-hero: #171937;
+  --p-clr: white;
+  --text-clr: white;
+  --btn-clr: white;
+  --body-bg-clr: black;
+  --card-bg-clr: #555555;
+  --card-aboutme-header: rgb(77, 66, 66);
+  --footer-clr: rgb(32, 32, 32);
+}
+
+body[data-theme="light"] {
+  --nav-bg-clr: snow;
+  --main-page-hero: #f2a285;
+  --p-clr: black;
+  --text-clr: black;
+  --btn-clr: black;
+  --body-bg-clr: white;
+  --card-bg-clr: #f1f1f1;
+  --card-aboutme-header: rgb(195, 182, 182);
+  --footer-clr: snow;
+  --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* 
 .dark-theme {
   --nav-bg-clr: rgb(57, 57, 57);
   --main-page-hero: #171937;
@@ -29,7 +55,7 @@ body {
   --card-aboutme-header: rgb(195, 182, 182);
   --footer-clr: snow;
   --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
+} */
 
 body {
   background-color: var(--body-bg-clr);
