@@ -6,7 +6,7 @@ import { BsFillSunFill } from "react-icons/bs";
 
 function Theme() {
   // const ThemeType = "dark-theme" | "light-theme";
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
+  const [theme, setTheme] = useState(localStorage.getItem("theme") || "dark");
   const dataTheme = document.body.getAttribute("data-theme");
 
   useEffect(() => {
