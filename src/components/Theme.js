@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Theme.css";
 import { BsFillMoonFill } from "react-icons/bs";
-import { BsFillSunFill } from "react-icons/bs";
+import { ImSun } from "react-icons/im";
 // import { ThemeType } from "./types";
 
 function Theme() {
@@ -26,7 +26,7 @@ function Theme() {
         <BsFillMoonFill />
       </button> */}
       <button className="switch-theme-button" onClick={handleSwitchTheme}>
-        {isDark ? <BsFillSunFill /> : <BsFillMoonFill />}
+        {isDark ? <ImSun style={{ color: "white" }} /> : <BsFillMoonFill />}
       </button>
     </div>
   );

@@ -8,10 +8,16 @@
 
 .hero {
   justify-content: space-around;
-  padding: 50px;
+  /* padding: 50px; */
   padding-top: 90px;
 }
 
 .hero-1st-pic {
   color: var(--text-clr);
+}
+
+@media screen and (max-width: 768px) {
+  /* .hero--main {
+    height: 80vh;
+  } */
 }
