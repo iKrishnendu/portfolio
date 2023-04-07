@@ -1,3 +1,7 @@
+.Mytool--Section {
+  padding-bottom: 30px;
+}
+
 .mytool--Skill {
   display: flex;
   flex-wrap: wrap;
@@ -5,6 +9,7 @@
   align-items: center;
   justify-content: center;
   transition: 0.2s;
+  padding-bottom: 20px;
 }
 
 .mytool--Skill > div {

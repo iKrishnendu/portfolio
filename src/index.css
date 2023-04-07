@@ -9,15 +9,26 @@ body {
 }
 
 body[data-theme="dark"] {
-  --nav-bg-clr: rgb(57, 57, 57);
+  /* --nav-bg-clr: #1f1b24; */
+  --nav-bg-clr: #181818;
   --main-page-hero: #171937;
   --p-clr: white;
-  --text-clr: white;
+  --text-clr: #ffffff;
   --btn-clr: white;
-  --body-bg-clr: black;
-  --card-bg-clr: #555555;
+  --body-bg-clr: #121212;
+  --body-bg-img: linear-gradient(
+    to bottom,
+    #404040,
+    #353535,
+    #2b2b2b,
+    #212121,
+    #181818
+  );
+  /* --card-bg-clr: #555555; */
+  --card-bg-clr: #131a26;
   --card-aboutme-header: rgb(77, 66, 66);
   --footer-clr: rgb(32, 32, 32);
+  --card-bg-clr-project: #131a26;
 }
 
 body[data-theme="light"] {
@@ -31,6 +42,7 @@ body[data-theme="light"] {
   --card-aboutme-header: rgb(195, 182, 182);
   --footer-clr: snow;
   --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  --card-bg-clr-project: rgb(174, 210, 174);
 }
 
 ::-webkit-scrollbar {
@@ -51,6 +63,7 @@ body[data-theme="light"] {
 
 body {
   background-color: var(--body-bg-clr);
+  background-image: var(--body-bg-img);
   color: var(--text-clr);
 }
 

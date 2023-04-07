@@ -32,9 +32,9 @@
   overflow: hidden;
 }
 img {
-  height: 15rem;
+  height: 14rem;
   width: auto;
-  border-radius: 150px;
+  border-radius: 50%;
   /* border: 1px solid red; */
 }
 
