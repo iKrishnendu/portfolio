@@ -6,19 +6,28 @@
   right: 10%;
   padding-top: 30px;
   padding-bottom: 50px;
-  height: 70vh;
+  /* height: 70vh; */
 }
 
 /* Float four columns side by side */
 .column {
   float: left;
-  width: 23%;
-  padding: 0 10px;
+  width: 20%;
+  padding: 0 30px;
 }
 
 /* Remove extra left and right margins, due to padding */
 .row {
   margin: 0 -5px;
+  /* right: 10%; */
+  justify-content: center;
+  /* width: 100%; */
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: DodgerBlue; */
+  align-items: center;
+  justify-content: center;
+  /* padding-bottom: 20px; */
 }
 
 /* Clear floats after the columns */
@@ -32,7 +41,7 @@
 @media screen and (max-width: 600px) {
   .column {
     width: 90%;
-    display: block;
+    /* display: block; */
     margin-bottom: 20px;
   }
 }

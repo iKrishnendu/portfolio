@@ -2,6 +2,7 @@ import React from "react";
 import "./Aboutme.css";
 import Logo from "../assets/logo.png";
 import Myphoto from "../assets/myphoto.jpg";
+import ScrollAnimation from "./ScrollAnimation";
 // import Krish from "../assets/krish1.jpeg"
 
 const Aboutme = () => {
@@ -9,6 +10,7 @@ const Aboutme = () => {
     <>
       <br />
       <h2 className="about--text">About Me</h2>
+      {/* <ScrollAnimation style={{ float: "right" }} /> */}
       <div className="aboutme">
         <div className="about--image">
           <img src={Myphoto} alt="Krishnendu Sahoo" />
@@ -31,6 +33,10 @@ const Aboutme = () => {
             talk. Thank you 💜 For visiting..
           </div>
         </div>
+        <ScrollAnimation
+          name="About Me"
+          style={{ float: "right", overflow: "hidden" }}
+        />
       </div>
     </>
   );

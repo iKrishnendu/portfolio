@@ -25,7 +25,7 @@
   background-color: var(--card-aboutme-header);
 }
 .about--body {
-  padding: 15px 10px;
+  padding: 25px 10px;
   height: auto;
   background-color: var(--card-bg-clr);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);

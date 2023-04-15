@@ -6,11 +6,16 @@ import Lhs from "../assets/lhs.jpg";
 import Tib from "../assets/tib.jpg";
 import Intern from "../assets/internship.png";
 import "./Education.css";
+import ScrollAnimation from "./ScrollAnimation";
 
 function Education() {
   return (
     <>
       <h1>MY JOURNEY</h1>
+      <ScrollAnimation
+        name="Journey"
+        style={{ float: "right", overflow: "hidden", right: "0" }}
+      />
       <div className="edu--container--main">
         <div className="the--main--edu">
           <div className="edu--container--left">
