@@ -11,7 +11,26 @@
   padding: 10px;
   text-align: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+}
+.left {
+  padding-top: 50px;
+}
+.right {
+  padding-top: 50px;
+}
+.sitemap {
+  display: flex;
+  flex-direction: column;
+  /* margin-left: 40px; */
+  margin: 30px;
+  /* padding-left: 40px; */
+}
+
+.sitemap a {
+  text-decoration: none;
+  /* color: var(--text-clr); */
+  color: gray;
 }
 
 @media screen and (max-width: 600px) {
