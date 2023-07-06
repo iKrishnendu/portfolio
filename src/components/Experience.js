@@ -1,7 +1,9 @@
 import React from "react";
 import "./Experience.css";
 import ScrollAnimation from "./ScrollAnimation";
-
+import { CgWebsite } from "react-icons/cg";
+import { AiOutlineCloudServer } from "react-icons/ai";
+import { FaThemeco } from "react-icons/fa";
 const Experience = () => {
   return (
     <>
@@ -15,13 +17,18 @@ const Experience = () => {
           <p>WHAT I DO?</p>
 
           <h2>HERE ARE SOME OF MY EXPERTISE</h2>
+          <br />
           <ScrollAnimation
             name="What I Do?"
             // style={{ float: "right", overflow: "hidden" }}
           />
+
           <div class="row">
             <div class="column">
               <div class="card">
+                <div>
+                  <CgWebsite />
+                </div>
                 <h3>WEB DEVELPOMENT</h3>
                 <p>
                   I am a full stack web developer (MERN) and build websites
@@ -31,7 +38,7 @@ const Experience = () => {
               </div>
             </div>
 
-            <div class="column">
+            {/* <div class="column">
               <div class="card">
                 <h3>APP DEVELPOMENT</h3>
                 <p>
@@ -40,10 +47,13 @@ const Experience = () => {
                   have live app published on Google Play Store.
                 </p>
               </div>
-            </div>
+            </div> */}
 
             <div class="column">
               <div class="card">
+                <div>
+                  <AiOutlineCloudServer />
+                </div>
                 <h3>CLOUD</h3>
                 <p>
                   I know amazon aws and google cloud beginner level. I can
@@ -55,10 +65,13 @@ const Experience = () => {
 
             <div class="column">
               <div class="card">
+                <div>
+                  <FaThemeco />
+                </div>
                 <h3>OTHER'S INTEREST</h3>
                 <p>
                   I also have decent hand in developing website with WordPress.
-                  C++, Github are my other fields of interest. Currently, I am
+                  Java, Github are my other fields of interest. Currently, I am
                   investing my free time in Web3.js
                 </p>
               </div>

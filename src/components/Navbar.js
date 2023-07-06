@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { BiHomeSmile } from "react-icons/bi";
-import { MdContacts } from "react-icons/md";
+import { RiContactsLine } from "react-icons/ri";
 import { TfiWrite } from "react-icons/tfi";
 import { RxAvatar } from "react-icons/rx";
 import { BsLaptop } from "react-icons/bs";
@@ -41,7 +41,7 @@ const Navbar = () => {
             </li>
             <li>
               <NavLink style={navLinkStyles} to={"/contact"}>
-                <MdContacts className="nav-pic-color" />
+                <RiContactsLine className="nav-pic-color" />
                 <p className="nav--names">Contact</p>
               </NavLink>
             </li>

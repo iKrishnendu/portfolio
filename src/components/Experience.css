@@ -52,4 +52,10 @@
   padding: 16px;
   text-align: center;
   background-color: var(--card-bg-clr);
+  border-radius: 40px;
+}
+
+.card > div {
+  font-size: 60px;
+  color: brown;
 }

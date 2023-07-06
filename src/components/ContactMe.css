@@ -12,10 +12,11 @@
 
 .Social-contact-me-component > div {
   background-color: #f1f1f1;
-  width: 50px;
+  width: 45px;
+  height: 45px;
   margin: 10px;
   text-align: center;
-  line-height: 43px;
+  line-height: 47px;
   font-size: 20px;
   border-radius: 50px;
 }

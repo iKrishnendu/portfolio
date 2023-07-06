@@ -24,6 +24,7 @@ function MyTools() {
       <div>
         <h1>PROFESSIONAL SKILLSET</h1>
       </div>
+      <br />
       <div className="mytool--Skill">
         <div className="mytool-div">
           <FaJava />
@@ -60,6 +61,7 @@ function MyTools() {
         name="Skills"
         // style={{ float: "right", overflow: "hidden" }}
       />
+      <br />
       <div>
         <h1>TOOLS I USE</h1>
       </div>
