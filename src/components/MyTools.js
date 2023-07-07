@@ -26,34 +26,34 @@ function MyTools() {
       </div>
       <br />
       <div className="mytool--Skill">
-        <div className="mytool-div">
+        <div className="mytool-div" data-aos="fade-up">
           <FaJava />
         </div>
-        <div className="mytool-div">
+        <div className="mytool-div" data-aos="fade-up" data-aos-delay="200">
           <FaPython />
         </div>
-        <div className="mytool-div">
+        <div className="mytool-div" data-aos="fade-up" data-aos-delay="400">
           <SiNextdotjs />
         </div>
-        <div className="mytool-div">
+        <div className="mytool-div" data-aos="fade-up" data-aos-delay="600">
           <DiJavascript1 />
         </div>
-        <div className="mytool-div">
+        <div className="mytool-div" data-aos="fade-up" data-aos-delay="800">
           <FaReact />
         </div>
-        <div className="mytool-div">
+        <div className="mytool-div" data-aos="fade-up" data-aos-delay="800">
           <FaNode />
         </div>
-        <div className="mytool-div">
+        <div className="mytool-div" data-aos="fade-up" data-aos-delay="600">
           <DiMongodb />
         </div>
-        <div className="mytool-div">
+        <div className="mytool-div" data-aos="fade-up" data-aos-delay="400">
           <SiExpress />
         </div>
-        <div className="mytool-div">
+        <div className="mytool-div" data-aos="fade-up" data-aos-delay="200">
           <ImGit />
         </div>
-        <div className="mytool-div">
+        <div className="mytool-div" data-aos="fade-up">
           <SiFirebase />
         </div>
       </div>
@@ -66,19 +66,19 @@ function MyTools() {
         <h1>TOOLS I USE</h1>
       </div>
       <div className="mytool--Skill">
-        <div>
+        <div data-aos="fade-up">
           <TbBrandVscode />
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="200">
           <SiPostman />
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="400">
           <SiVercel />
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-delay="200">
           <SiHeroku />
         </div>
-        <div>
+        <div data-aos="fade-up">
           <FaAws />
         </div>
       </div>

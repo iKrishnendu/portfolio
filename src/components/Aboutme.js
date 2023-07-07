@@ -12,11 +12,19 @@ const Aboutme = () => {
       <h2 className="about--text">About Me</h2>
       {/* <ScrollAnimation style={{ float: "right" }} /> */}
       <div className="aboutme">
-        <div className="about--image">
+        <div
+          className="about--image"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <img src={Myphoto} alt="Krishnendu Sahoo" />
         </div>
 
-        <div className="about--card">
+        <div
+          className="about--card"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           <div className="card--header">
             <span class="dot red"></span>
             <span class="dot orange"></span>

@@ -14,6 +14,14 @@ import Particle from "./components/Particle";
 import Theme from "./components/Theme";
 // import { ThemeProvider } from "next-themes";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+// ..install aos for animation.. transition
+AOS.init({
+  // offset: 200,
+  duration: 3000,
+});
+
 function App() {
   return (
     <>

@@ -17,18 +17,18 @@ function Education() {
         style={{ float: "right", overflow: "hidden", right: "0" }}
       />
       <div className="edu--container--main">
-        <div className="the--main--edu">
+        <div className="the--main--edu" data-aos="fade-up">
           <div className="edu--container--left">
-            <div className="edu--img">
+            <div className="edu--img" data-aos="fade-up">
               <img src={Intern} className="edu--images" />
             </div>
-            <div className="edu--img">
+            <div className="edu--img" data-aos="fade-up">
               <img src={Tib} className="edu--images" />
             </div>
-            <div className="edu--img">
+            <div className="edu--img" data-aos="fade-up">
               <img src={Lhs} className="edu--images" />
             </div>
-            <div className="edu--img">
+            <div className="edu--img" data-aos="fade-up">
               <img src={Vmas} className="edu--images" />
             </div>
           </div>
