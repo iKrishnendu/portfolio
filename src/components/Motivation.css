@@ -1,0 +1,40 @@
+.quote-box {
+  text-align: center;
+  background-color: rgb(236, 214, 214);
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.quote-container {
+  margin-top: 20px;
+}
+
+.quote {
+  /* font-size: 24px; */
+  margin-bottom: 10px;
+}
+
+.quote-container > .author {
+  font-size: 18px;
+  font-style: italic;
+  color: #888;
+}
+
+.quote-container > button {
+  padding: 10px 20px;
+  /* background-color: #007bff; */
+  /* color: #fff; */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.quote-container > button:hover {
+  background-color: rgb(224, 134, 134);
+  color: white;
+}

@@ -4,7 +4,8 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import Aboutme from "../components/Aboutme";
 import ContactMe from "../components/ContactMe";
-import Theme from "../components/Theme";
+// import Theme from "../components/Theme";
+import Motivation from "../components/Motivation";
 
 const Home = () => {
   return (
@@ -13,7 +14,7 @@ const Home = () => {
       {/* <Theme /> */}
       <Hero />
       <Aboutme />
-
+      <Motivation />
       <ContactMe />
       <Footer />
     </div>
