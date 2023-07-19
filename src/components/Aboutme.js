@@ -1,7 +1,7 @@
 import React from "react";
 import "./Aboutme.css";
 import Logo from "../assets/logo.png";
-import Myphoto from "../assets/myphoto.jpg";
+import Myphoto from "../assets/photo.png";
 import ScrollAnimation from "./ScrollAnimation";
 // import Krish from "../assets/krish1.jpeg"
 
