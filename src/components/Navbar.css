@@ -1,9 +1,9 @@
 .nav--fixed {
   position: fixed;
-  left: 30%;
-  right: 30%;
+  left: 35%;
+  right: 35%;
   bottom: 1rem;
-  width: 40%;
+  width: 30%;
   background-color: var(--nav-bg-clr);
   color: var(--text-clr);
   text-align: center;
@@ -50,9 +50,9 @@
 
 @media screen and (max-width: 768px) {
   .nav--fixed {
-    left: 5%;
-    right: 5%;
+    left: 13%;
+    right: 13%;
 
-    width: 90%;
+    width: 74%;
   }
 }

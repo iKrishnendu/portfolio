@@ -45,12 +45,12 @@ const Navbar = () => {
                 <p className="nav--names">Contact</p>
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink style={navLinkStyles} to={"/blogs"}>
                 <TfiWrite className="nav-pic-color" />
                 <p className="nav--names">Blog</p>
               </NavLink>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

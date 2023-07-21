@@ -11,7 +11,7 @@ body {
 
 body[data-theme="dark"] {
   /* --nav-bg-clr: #1f1b24; */
-  --nav-bg-clr: #181818;
+  --nav-bg-clr: #0f3259;
   --main-page-hero: #171937;
   --p-clr: white;
   --text-clr: #ffffff;
