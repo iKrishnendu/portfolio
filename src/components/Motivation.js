@@ -26,7 +26,7 @@ function App() {
 
   return (
     <>
-      <h1>Quote Of The Day</h1>
+      <h3>Quote Of The Day</h3>
       <div className="quote-box" data-aos="fade-up">
         <div className="quote-container">
           <p className="quote">{quote}</p>

@@ -9,7 +9,7 @@ const Aboutme = () => {
   return (
     <>
       <br />
-      <h2 className="about--text">About Me</h2>
+      <h2 className="about--text">ABOUT ME</h2>
       {/* <ScrollAnimation style={{ float: "right" }} /> */}
       <div className="aboutme">
         <div
@@ -32,13 +32,19 @@ const Aboutme = () => {
           </div>
 
           <div className="about--body">
-            Hi :) <br /> <br />
-            &nbsp;&nbsp; 👋 I'm Krishnendu Sahoo. I am Currently studing as
+            Greetings :) <br /> <br />
+            {/* &nbsp;&nbsp; 👋 I'm Krishnendu Sahoo. I am Currently studing as
             Computer Science Engineering at Techno India, Batanagar (Kolkata) :)
             I'm working with newest front-end frameworks like React. What you
             are seeing now is my portfolio website. If you like this portfolio,
             plz also cheeck my Projects ⭐ If You like my Project then lets
-            talk. Thank you 💜 For visiting..
+            talk. Thank you 💜 For visiting.. */}
+            👋 Welcome to my website! I'm Krishnendu Sahoo, a Computer Science
+            Engineering student at Techno India, Batanagar (Kolkata). I'm
+            passionate about working with cutting-edge front-end frameworks like
+            React. Here, you'll find my portfolio showcasing my latest projects.
+            If you enjoy my work, don't forget to explore my projects ⭐ Let's
+            connect and discuss collaborations. Thank you 💜 for visiting!
           </div>
         </div>
         <ScrollAnimation
