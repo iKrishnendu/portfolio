@@ -11,7 +11,7 @@ const Project = () => {
       <MyProject />
       <Github />
       <Navbar />
-      <Motivation />
+      {/* <Motivation /> */}
       <Footer />
     </>
   );

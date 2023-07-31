@@ -9,7 +9,7 @@ const Layout = ({ Children }) => {
     <React.Fragment>
       <Navbar />
       <main>{Children}</main>
-      <Motivation />
+      {/* <Motivation /> */}
       <ContactMe />
       <Footer />
     </React.Fragment>

@@ -16,7 +16,7 @@ const About = () => {
       <Experience />
       <MyTools />
       <Education />
-      <Motivation />
+      {/* <Motivation /> */}
       <Footer />
     </>
   );
