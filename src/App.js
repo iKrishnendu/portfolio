@@ -16,6 +16,7 @@ import Theme from "./components/Theme";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Resume from "./routes/Resume";
 // ..install aos for animation.. transition
 AOS.init({
   // offset: 200,
@@ -36,6 +37,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/resume" element={<Resume />} />
       </Routes>
       {/* </ThemeProvider> */}
     </>
