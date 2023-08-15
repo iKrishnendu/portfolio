@@ -72,7 +72,7 @@ const Experience = () => {
                 <p>
                   I also have decent hand in developing website with WordPress.
                   Java, Github are my other fields of interest. Currently, I am
-                  investing my free time in Web3.js
+                  investing my free time in Web3.js & AI/ML
                 </p>
               </div>
             </div>

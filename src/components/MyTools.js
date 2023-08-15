@@ -22,7 +22,7 @@ function MyTools() {
   return (
     <div className="Mytool--Section">
       <div>
-        <p>SKILL SAFARI : ARE YOU LOOKING FOR THOOSE SKILLS !</p>
+        <p>SKILL SAFARI : ARE YOU RECRUTER ✨🤩 LOOKING FOR THOOSE SKILLS !</p>
         <h1>PROFESSIONAL SKILLSET</h1>
       </div>
       <br />

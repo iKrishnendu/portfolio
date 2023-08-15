@@ -40,3 +40,8 @@
 a {
   color: black;
 }
+
+.last-page-msg > p {
+  text-align: center;
+  font-size: small;
+}
