@@ -33,7 +33,7 @@ const Experience = () => {
                 <p>
                   I am a full stack web developer (MERN) and build websites
                   using HTML, CSS, Javascript, ReactJs. I have also good grasp
-                  on Node and NoSQL(MongoDb)
+                  on Node and NoSQL (MongoDb)
                 </p>
               </div>
             </div>
