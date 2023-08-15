@@ -45,6 +45,7 @@ body[data-theme="light"] {
   --footer-clr: snow;
   --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   --card-bg-clr-project: rgb(174, 210, 174);
+  --card-bg-clr--skill: rgb(247, 228, 221);
 }
 
 ::-webkit-scrollbar {

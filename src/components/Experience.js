@@ -14,7 +14,7 @@ const Experience = () => {
             // style={{ float: "right", overflow: "hidden" }}
           /> */}
 
-          <p>WHAT I DO?</p>
+          <p>WHAT I DO ?</p>
 
           <h2>HERE ARE SOME OF MY EXPERTISE</h2>
           <br />

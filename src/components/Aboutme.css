@@ -1,13 +1,25 @@
 .about--text {
   text-align: center;
 }
+p {
+  text-align: center;
+}
 .about--image {
   flex: 40%;
+  /* position: fixed; */
+  float: none;
+  /* z-index: 8; */
+  /* height: 250px; */
+  /* overflow-y: auto; */
+  /* background-color: beige; */
+  /* align-items: center;
+  justify-content: center; */
 }
 
 .about--card {
   width: 40%;
   /* padding: 3rem; */
+  /* overflow-y: scroll; */
   flex: 60%;
   /* border: 1px solid rgb(231, 231, 231); */
 

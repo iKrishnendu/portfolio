@@ -27,12 +27,12 @@ const Navbar = () => {
                 <p className="nav--names">Home</p>
               </NavLink>
             </li>
-            <li>
+            {/* <li>
               <NavLink style={navLinkStyles} to={"/about"}>
                 <RxAvatar className="nav-pic-color" />
                 <p className="nav--names">About</p>
               </NavLink>
-            </li>
+            </li> */}
             <li>
               <NavLink style={navLinkStyles} to={"/project"}>
                 <BsLaptop className="nav-pic-color" />

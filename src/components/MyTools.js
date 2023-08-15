@@ -22,10 +22,11 @@ function MyTools() {
   return (
     <div className="Mytool--Section">
       <div>
+        <p>SKILL SAFARI : ARE YOU LOOKING FOR THOOSE SKILLS !</p>
         <h1>PROFESSIONAL SKILLSET</h1>
       </div>
       <br />
-      <div className="mytool--Skill">
+      <div className="mytool--Skill skill-first-section">
         <div className="mytool-div" data-aos="fade-up">
           <FaJava />
         </div>

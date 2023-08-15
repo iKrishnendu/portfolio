@@ -6,6 +6,9 @@ import Aboutme from "../components/Aboutme";
 import ContactMe from "../components/ContactMe";
 // import Theme from "../components/Theme";
 import Motivation from "../components/Motivation";
+import Experience from "../components/Experience";
+import MyTools from "../components/MyTools";
+import Education from "../components/Education";
 
 const Home = () => {
   return (
@@ -14,6 +17,9 @@ const Home = () => {
       {/* <Theme /> */}
       <Hero />
       <Aboutme />
+      <Experience />
+      <MyTools />
+      <Education />
       <ContactMe />
       {/* <Motivation /> */}
       <Footer />

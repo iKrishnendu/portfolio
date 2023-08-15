@@ -3,12 +3,14 @@ import "./Aboutme.css";
 import Logo from "../assets/logo.png";
 import Myphoto from "../assets/photo.png";
 import ScrollAnimation from "./ScrollAnimation";
+import Education from "./Education";
 // import Krish from "../assets/krish1.jpeg"
 
 const Aboutme = () => {
   return (
     <>
       <br />
+      <p>LET'S INTRODUCE MYSELF 😁</p>
       <h2 className="about--text">ABOUT ME</h2>
       {/* <ScrollAnimation style={{ float: "right" }} /> */}
       <div className="aboutme">
