@@ -4,6 +4,7 @@
   width: 100%;
   justify-content: center;
   background-color: var(--main-page-hero);
+  /* color: transparent; */
 }
 
 .hero {

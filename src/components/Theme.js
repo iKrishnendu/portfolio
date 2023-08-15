@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./Theme.css";
 import { BsFillMoonFill } from "react-icons/bs";
 import { ImSun } from "react-icons/im";
+import { Link } from "react-router-dom";
+import { TbDownload } from "react-icons/tb";
 // import { ThemeType } from "./types";
 
 function Theme() {
@@ -21,14 +23,20 @@ function Theme() {
   const isDark = theme === "dark";
 
   return (
-    <div className="theme-css">
-      {/* <button onClick={handleSwitchTheme}>
+    <>
+      <div className="theme-css">
+        {/* <button onClick={handleSwitchTheme}>
         <BsFillMoonFill />
       </button> */}
-      <button className="switch-theme-button" onClick={handleSwitchTheme}>
-        {isDark ? <ImSun style={{ color: "white" }} /> : <BsFillMoonFill />}
-      </button>
-    </div>
+
+        <Link to="https://sahoo.vercel.app/resume" className="resume-download">
+          <TbDownload />
+        </Link>
+        <button className="switch-theme-button" onClick={handleSwitchTheme}>
+          {isDark ? <ImSun style={{ color: "white" }} /> : <BsFillMoonFill />}
+        </button>
+      </div>
+    </>
   );
 }
 

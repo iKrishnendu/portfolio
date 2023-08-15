@@ -10,7 +10,7 @@ const Aboutme = () => {
   return (
     <>
       <br />
-      <p>LET'S INTRODUCE MYSELF 😁</p>
+      <p className="p-aboutme">LET'S INTRODUCE MYSELF 😁</p>
       <h2 className="about--text">ABOUT ME</h2>
       {/* <ScrollAnimation style={{ float: "right" }} /> */}
       <div className="aboutme">

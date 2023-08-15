@@ -18,6 +18,7 @@ const Hero = () => {
           I'm <span>Krishnendu Sahoo</span>
         </h2>
       </div>
+      <div></div>
     </div>
   );
 };

@@ -9,6 +9,12 @@
   z-index: 3;
   overflow: hidden;
 }
+.theme-css > .resume-download {
+  font-size: large;
+  font: bold;
+  padding: 0px 10px;
+  color: var(--text-clr);
+}
 .switch-theme-button {
   background-color: transparent;
   border: none;

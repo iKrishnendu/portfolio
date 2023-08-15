@@ -6,6 +6,9 @@
   /* left: 5%; */
   background-color: var(--card-bg-clr--skill);
 }
+.Mytool--Section > div > p {
+  text-align: center;
+}
 
 .mytool--Skill {
   display: flex;
