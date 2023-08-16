@@ -9,6 +9,7 @@ import speedtest from "../assets/speedtest.png";
 import { BsGithub } from "react-icons/bs";
 import { SiDarkreader } from "react-icons/si";
 import { CgWebsite } from "react-icons/cg";
+import ScrollAnimation from "./ScrollAnimation";
 
 function MyProject() {
   return (

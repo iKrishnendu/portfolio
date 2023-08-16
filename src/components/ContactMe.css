@@ -43,5 +43,15 @@ a {
 
 .last-page-msg > p {
   text-align: center;
-  font-size: small;
+  font-size: 12px;
+  line-height: 1.6;
+  /* padding: 5px; */
+}
+.last-page-msg {
+  /* border: 0.1px solid orangered; */
+  padding: 0px 5px;
+  width: 80%;
+  position: relative;
+  left: 10%;
+  right: 10%;
 }
