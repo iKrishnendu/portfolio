@@ -17,6 +17,7 @@ import Theme from "./components/Theme";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Resume from "./routes/Resume";
+import AnimatedCursor from "react-animated-cursor";
 // ..install aos for animation.. transition
 AOS.init({
   // offset: 200,
@@ -28,9 +29,23 @@ function App() {
     <>
       {/* <ThemeProvider> */}
       <div className="particle">{/* <Particle/>  */}</div>
-
       <ScrollToTop />
       <Theme />
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={35}
+        innerScale={1}
+        outerScale={2}
+        outerAlpha={0}
+        hasBlendMode={true}
+        innerStyle={{
+          backgroundColor: "var(--cursor-color)",
+        }}
+        outerStyle={{
+          border: "3px solid var(--cursor-color)",
+        }}
+      />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/project" element={<Project />} />

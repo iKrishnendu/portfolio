@@ -11,11 +11,11 @@ import ScrollAnimation from "./ScrollAnimation";
 function Education() {
   return (
     <>
+      <br />
+      <br />
+      <br />
+      <p className="p-class">THE JOURNEY OF MINE 😃</p>
       <h1>MY JOURNEY</h1>
-      <ScrollAnimation
-        name="Journey"
-        style={{ float: "right", overflow: "hidden", right: "0" }}
-      />
       <div className="edu--container--main">
         <div className="the--main--edu" data-aos="fade-up">
           <div className="edu--container--left">

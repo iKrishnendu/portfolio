@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Handjet&display=swap");
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -10,6 +12,7 @@ body {
 }
 
 body[data-theme="dark"] {
+  --cursor-color: #fff;
   /* --nav-bg-clr: #1f1b24; */
   --nav-bg-clr: #0f3259;
   --main-page-hero: #171937;
@@ -31,9 +34,13 @@ body[data-theme="dark"] {
   --card-aboutme-header: rgb(77, 66, 66);
   --footer-clr: rgb(32, 32, 32);
   --card-bg-clr-project: #131a26;
+  --left-about-clr: #131a26;
+  --right-about-clr1: #131a26;
+  --right-about-clr2: #131a26;
 }
 
 body[data-theme="light"] {
+  --cursor-color: #333;
   --nav-bg-clr: snow;
   --main-page-hero: #f2a285;
   --p-clr: black;
@@ -46,6 +53,9 @@ body[data-theme="light"] {
   --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   --card-bg-clr-project: rgb(174, 210, 174);
   --card-bg-clr--skill: rgb(247, 228, 221);
+  --left-about-clr: #f2fbf7;
+  --right-about-clr1: #fbf2f9;
+  --right-about-clr2: rgb(219, 245, 255);
 }
 
 ::-webkit-scrollbar {

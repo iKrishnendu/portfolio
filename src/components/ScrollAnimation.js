@@ -48,8 +48,10 @@ function ScrollAnimation(props) {
             style={{
               transform: `translateX(${-scrollPosition}px)`,
               backgroundColor: "none",
-              fontSize: "100px",
-              //   fontFamily
+              fontSize: "200px",
+              // fontFamily: "-moz-initial",
+              fontFamily: "Handjet",
+
               right: "-400px",
               zIndex: "-1",
               //   top: "60%",

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Hero.css";
 import { BiCode } from "react-icons/bi";
+import ScrollAnimation from "./ScrollAnimation";
 
 const Hero = () => {
   return (
@@ -14,7 +15,11 @@ const Hero = () => {
             👋🏻
           </span>
         </h2>
-        <h2>
+        <ScrollAnimation
+          name="KRISHNENDU SAHOO"
+          style={{ float: "right", overflow: "hidden" }}
+        />
+        <h2 className="my--name">
           I'm <span>Krishnendu Sahoo</span>
         </h2>
       </div>

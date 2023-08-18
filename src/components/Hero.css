@@ -3,7 +3,7 @@
   height: 100vh;
   width: 100%;
   justify-content: center;
-  background-color: var(--main-page-hero);
+  /* background-color: var(--main-page-hero); */
   /* color: transparent; */
 }
 
@@ -16,9 +16,17 @@
 .hero-1st-pic {
   color: var(--text-clr);
 }
+.my--name {
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
-  /* .hero--main {
-    height: 80vh;
-  } */
+  .hero--main {
+    background-color: var(--main-page-hero);
+    /* height: 80vh; */
+  }
+
+  .my--name {
+    display: block;
+  }
 }

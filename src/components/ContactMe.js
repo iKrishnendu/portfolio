@@ -11,7 +11,7 @@ function ContactMe() {
   return (
     <>
       <div className="contact-me-component">
-        <h1>Finde Me On</h1>
+        <h1>Find Me On</h1>
         <div className="leetcode">
           <Link to="https://leetcode.com/krishnendusahoo">
             <SiLeetcode color="black" />

@@ -4,25 +4,51 @@
 .p-aboutme {
   text-align: center;
 }
+.exp {
+  background-color: var(--right-about-clr2);
+  border-radius: 10px;
+  padding: 0px;
+  margin: 0px;
+}
+.exp > h2,
+.exp > P {
+  text-align: center;
+}
 .about--image {
+  /* margin-top: 40px; */
+  position: sticky;
   flex: 40%;
-  /* position: fixed; */
-  float: none;
-  /* z-index: 8; */
-  /* height: 250px; */
+  display: grid;
+
+  height: 100vh;
   /* overflow-y: auto; */
-  /* background-color: beige; */
-  /* align-items: center;
-  justify-content: center; */
+  background-color: var(--left-about-clr);
+  bottom: 0.5rem;
+  align-self: flex-end;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
 }
 
-.about--card {
-  width: 40%;
-  /* padding: 3rem; */
+.right-side {
+  /* width: 40%; */
+  /* padding: 0px 3rem; */
   /* overflow-y: scroll; */
   flex: 60%;
+  margin: 0px 5px;
+  /* padding: 10px; */
+  /* background-color: rgb(241, 255, 245); */
   /* border: 1px solid rgb(231, 231, 231); */
+  border-radius: 10px;
+}
 
+.card--aboutme-div {
+  background-color: var(--right-about-clr1);
+  /* height: 60vh; */
+  padding: 60px;
+  border-radius: 10px;
+}
+.about--card {
   transition: 0.3s;
 }
 
@@ -54,8 +80,8 @@ img {
   display: flex;
   flex-direction: row;
   /* height: 80vh; */
-  /* justify-content: space-between; */
-  padding: 110px 120px;
+  justify-content: space-between;
+  /* padding: 110px 120px; */
 }
 
 .dot {
@@ -75,16 +101,29 @@ img {
   background-color: green;
 }
 
+.exp {
+  margin-top: 5px;
+  padding-top: 30px;
+}
+
 @media screen and (max-width: 768px) {
+  .card--aboutme-div {
+    padding: 5px;
+  }
   .aboutme {
     flex-direction: column;
   }
   .about--image {
+    position: static;
     text-align: center;
+    width: 100%;
     padding-bottom: 40px;
+    padding: 20px 0px;
   }
-  .about--card {
+  .right-side {
     width: 98%;
+    margin: 0px;
+    padding: 0px;
   }
 
   .aboutme {
