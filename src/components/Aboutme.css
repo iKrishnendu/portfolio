@@ -4,6 +4,18 @@
 .p-aboutme {
   text-align: center;
 }
+.cse-bg {
+  background: #fd9e9e;
+  padding: 2px 4px;
+  border-radius: 5px;
+  color: black;
+}
+.tib-bg {
+  background: #82ca9d;
+  padding: 2px 4px;
+  border-radius: 5px;
+  text-decoration: none;
+}
 .exp {
   background-color: var(--right-about-clr2);
   border-radius: 10px;
@@ -22,7 +34,7 @@
 
   height: 100vh;
   /* overflow-y: auto; */
-  background-color: var(--left-about-clr);
+  /* background-color: var(--left-about-clr); */
   bottom: 0.5rem;
   align-self: flex-end;
   align-items: center;
@@ -45,6 +57,7 @@
 .card--aboutme-div {
   background-color: var(--right-about-clr1);
   /* height: 60vh; */
+  border: 0.1px solid rgb(195, 150, 192);
   padding: 60px;
   border-radius: 10px;
 }
@@ -64,13 +77,13 @@
 }
 .about--body {
   padding: 25px 10px;
-  height: auto;
+  height: 1.6;
   background-color: var(--card-bg-clr);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
 }
 img {
-  height: 14rem;
+  height: 20rem;
   width: auto;
   border-radius: 50%;
   /* border: 1px solid red; */
@@ -104,6 +117,7 @@ img {
 .exp {
   margin-top: 5px;
   padding-top: 30px;
+  border: 0.1px solid green;
 }
 
 @media screen and (max-width: 768px) {

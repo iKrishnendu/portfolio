@@ -4,7 +4,7 @@ import Logo from "../assets/logo.png";
 import Vmas from "../assets/vmas.jpg";
 import Lhs from "../assets/lhs.jpg";
 import Tib from "../assets/tib.jpg";
-import Intern from "../assets/internship.png";
+import Intern from "../assets/salesforce-logo.png";
 import "./Education.css";
 import ScrollAnimation from "./ScrollAnimation";
 
@@ -43,13 +43,16 @@ function Education() {
               <div className="box--rightside">
                 <div className="box">
                   <h4>
-                    Looking For Internship{" "}
+                    Salesforce Developer Virtual Internship{" "}
                     <span className="edu--lessname">
-                      2023 , <i>searching..</i>
+                      2023 Sept - 2023 Dec , <i>Ongoing..</i>
                     </span>
                   </h4>
                   <p>
-                    I am now searching a small Internship for brush my skill.
+                    Internship at Salesforce involved mastering organizational
+                    setup, Apex, testing, and Lightning Web Components. Applied
+                    expertise in process automation, security, and API
+                    integration for a holistic skill set.
                   </p>
                 </div>
                 <div className="box">

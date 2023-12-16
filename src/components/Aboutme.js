@@ -1,12 +1,14 @@
 import React from "react";
 import "./Aboutme.css";
 import Logo from "../assets/logo.png";
-import Myphoto from "../assets/photo.png";
+// import Myphoto from "../assets/photo.png";
+import Myphoto from "../assets/myphoto.jpeg";
 import ScrollAnimation from "./ScrollAnimation";
 import Education from "./Education";
 import { Link } from "react-router-dom";
 import { SiLeetcode } from "react-icons/si";
 import TimeLine from "./TimeLine";
+import { TbIdBadge } from "react-icons/tb";
 // import Krish from "../assets/krish1.jpeg"
 
 const Aboutme = () => {
@@ -23,7 +25,7 @@ const Aboutme = () => {
         >
           <img src={Myphoto} alt="Krishnendu Sahoo" />
 
-          <p>
+          {/* <p>
             <i>I'm Krishnendu Sahoo</i>
             <br></br>
             <i>Krishnendusahoo.mail@gmail.com</i>
@@ -38,7 +40,7 @@ const Aboutme = () => {
                 LeetCode
               </Link>
             </div>
-          </p>
+          </p> */}
         </div>
 
         <div
@@ -48,7 +50,9 @@ const Aboutme = () => {
         >
           <div className="card--aboutme-div">
             <p className="p-aboutme">LET'S INTRODUCE MYSELF 😁</p>
-            <h2 className="about--text">ABOUT ME</h2>
+            <span>
+              <h2 className="about--text">WHO AM I ?</h2>
+            </span>
             <div
               className="about--card"
               // data-aos="fade-up"
@@ -68,8 +72,13 @@ const Aboutme = () => {
             are seeing now is my portfolio website. If you like this portfolio,
             plz also cheeck my Projects ⭐ If You like my Project then lets
             talk. Thank you 💜 For visiting.. */}
-                👋 Welcome to my website! I'm Krishnendu Sahoo, a Computer
-                Science Engineering student at Techno India, Batanagar
+                👋 Welcome to my website! I'm <b>Krishnendu Sahoo</b>, a{" "}
+                <span className="cse-bg"> Computer Science Engineering </span>{" "}
+                student at{" "}
+                <Link to="https://tib.edu.in" className="tib-bg">
+                  {" "}
+                  Techno India, Batanagar
+                </Link>{" "}
                 (Kolkata). I'm passionate about working with cutting-edge
                 front-end frameworks like React. Here, you'll find my portfolio
                 showcasing my latest projects. If you enjoy my work, don't

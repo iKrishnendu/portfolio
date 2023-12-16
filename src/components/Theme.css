@@ -10,7 +10,7 @@
   overflow: hidden;
 }
 .theme-css > .resume-download {
-  font-size: large;
+  font-size: x-large;
   font: bold;
   padding: 0px 10px;
   color: var(--text-clr);
@@ -18,5 +18,5 @@
 .switch-theme-button {
   background-color: transparent;
   border: none;
-  font-size: medium;
+  font-size: x-large;
 }

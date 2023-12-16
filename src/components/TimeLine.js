@@ -14,9 +14,13 @@ const TimeLine = () => {
         <span>Spreading Cloud Technology Awareness | Community Engagement</span>
       </p>
       <p>
-        <b>GirlScript Summer of Code - Contributor</b>
+        <b>Salesforce Developer Virtual Internship</b>
         <br></br>
-        <span>Open Source Collaboration | Skill Enhancement</span>
+        <span>
+          Internship at Salesforce involved mastering - Apex | testing |
+          Lightning Web Components | Process automation | security | API
+          integration
+        </span>
       </p>
     </div>
   );
