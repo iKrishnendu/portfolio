@@ -63,6 +63,7 @@
 }
 .about--card {
   transition: 0.3s;
+  border: 1px solid rgba(255, 255, 0, 0.382);
 }
 
 .about--card:hover {

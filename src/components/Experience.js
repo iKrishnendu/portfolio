@@ -24,8 +24,8 @@ const Experience = () => {
           />
 
           <div class="row">
-            <div class="column">
-              <div class="card" data-aos="fade-up">
+            <div class="column" data-aos="fade-up">
+              <div class="card">
                 <div>
                   <CgWebsite />
                 </div>
@@ -49,8 +49,8 @@ const Experience = () => {
               </div>
             </div> */}
 
-            <div class="column">
-              <div class="card" data-aos="fade-up" data-aos-delay="400">
+            <div class="column" data-aos="fade-up" data-aos-delay="400">
+              <div class="card">
                 <div>
                   <AiOutlineCloudServer />
                 </div>
@@ -63,8 +63,8 @@ const Experience = () => {
               </div>
             </div>
 
-            <div class="column">
-              <div class="card" data-aos="fade-up">
+            <div class="column" data-aos="fade-up">
+              <div class="card">
                 <div>
                   <FaThemeco />
                 </div>
