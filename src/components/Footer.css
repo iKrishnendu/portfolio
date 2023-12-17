@@ -33,6 +33,11 @@
   color: gray;
 }
 
+.developer-name {
+  color: #ff0000;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 600px) {
   .footer--container {
     flex-direction: column;

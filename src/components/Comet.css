@@ -1,0 +1,39 @@
+/* Comet.css */
+
+.comet-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.comet {
+  position: absolute;
+  background-color: #fff; /* Set the color of your comet */
+  border-radius: 50%;
+  width: 2px; /* Set the width of your comet */
+  height: 2px; /* Set the height of your comet */
+  animation: cometAnimation 5s linear infinite; /* Adjust the animation duration */
+}
+
+.comet.comet1 {
+  left: 10vw;
+  animation-delay: 0s; /* Adjust the delay for the first comet */
+}
+
+.comet.comet2 {
+  left: 30vw;
+  animation-delay: -2s; /* Adjust the delay for the second comet */
+}
+
+@keyframes cometAnimation {
+  from {
+    transform: translateX(0) translateY(0) translateZ(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(50vw) translateY(50vh) translateZ(0);
+    opacity: 0;
+  }
+}
