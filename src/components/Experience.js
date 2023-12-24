@@ -7,6 +7,7 @@ import { FaThemeco } from "react-icons/fa";
 const Experience = () => {
   return (
     <>
+      <br />
       <div className="experience--tab">
         <div className="header">
           {/* <ScrollAnimation

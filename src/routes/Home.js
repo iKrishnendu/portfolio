@@ -5,7 +5,6 @@ import Hero from "../components/Hero";
 import Aboutme from "../components/Aboutme";
 import ContactMe from "../components/ContactMe";
 // import Theme from "../components/Theme";
-import Motivation from "../components/Motivation";
 import Experience from "../components/Experience";
 import MyTools from "../components/MyTools";
 import Education from "../components/Education";
@@ -21,7 +20,6 @@ const Home = () => {
       <MyTools />
       <Education />
       <ContactMe />
-      {/* <Motivation /> */}
       <Footer />
     </div>
   );

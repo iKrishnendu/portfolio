@@ -43,11 +43,7 @@ function ContactMe() {
         </div>
       </div>
       <div className="last-page-msg">
-        <p>
-          OH NO.. YOU ARE NOT A RECRUTER ? 🥲😓 Oh ! YOU ARE A VISITOR 🙂 THANKS
-          FOR VISITING MY WEBSITE 😍. PLEASE TELL THE PEOPLE THAT I HAVE BUILD A
-          AWESOME WEBSITE FOR SHOWCASING MY SKILL. ✨
-        </p>
+        <p>🙂😊 A SPECIAL THANKS FOR VISITING MY WEBSITE 😍✨</p>
       </div>
       <br />
     </>

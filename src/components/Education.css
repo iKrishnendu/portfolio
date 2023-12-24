@@ -67,7 +67,7 @@
   font-size: small;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .the--main--edu {
     width: 100%;
   }
@@ -75,25 +75,31 @@
     padding-right: 5px;
   }
   .edu--images {
-    padding-bottom: 40px;
+    padding-bottom: 50px;
   }
 }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 768px) {
+  .edu--images {
+    padding-bottom: 70px;
+  }
+}
+
+@media screen and (max-width: 550px) {
   .edu--container--main {
     padding-bottom: 100px;
   }
   .edu--images {
-    padding-bottom: 90px;
+    padding-bottom: 100px;
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 466px) {
   .edu--container--main {
     padding-bottom: 120px;
   }
   .edu--images {
-    padding-bottom: 100px;
+    padding-bottom: 190px;
   }
 }
 
@@ -102,6 +108,6 @@
         padding-bottom: 230px;
     } */
   .edu--images {
-    padding-bottom: 150px;
+    padding-bottom: 230px;
   }
 }

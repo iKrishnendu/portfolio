@@ -6,7 +6,9 @@
   /* background-color: var(--main-page-hero); */
   /* color: transparent; */
 }
-
+h1 {
+  text-align: center;
+}
 .hero {
   justify-content: space-around;
   /* padding: 50px; */

@@ -1,76 +1,113 @@
-import React, { useRef} from 'react'
-import './ContactForm.css'
+// ContactForm.js
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
+import "./ContactForm.css";
 
-function ContactForm() {
+const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
+  const [notification, setNotification] = useState(null);
 
-    const fullNameRef = useRef(null)
-    const emailRef = useRef(null)
-    const messageRef =  useRef(null)
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
 
-    
-    const handleSubmit = (event) => {
-        event.preventDefault()
-        const data = {
-            Name: fullNameRef.current.value,
-            email: emailRef.current.value,
-            message: messageRef.current.value
+  const displayNotification = (type, message) => {
+    setNotification({ type, message });
+
+    setTimeout(() => {
+      setNotification(null);
+    }, 3000);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .send(
+        "service_piwkaoh",
+        "template_m53b1vz",
+        formData,
+        "JOTMIUxaYKddTAfz4"
+      )
+      .then(
+        (response) => {
+          console.log("Email sent successfully:", response);
+          // Add your success handling logic here
+          displayNotification("success", "Form submitted successfully!");
+        },
+        (error) => {
+          console.error("Email failed to send:", error);
+          // Add your error handling logic here
+          displayNotification("error", "Form submission failed!");
         }
-        alert("tadaaa !  \n\n" + JSON.stringify(data) + "\n\n Your data 😎")
-    }
+      );
 
-    return (
-        <>
+    // You can reset the form data here if needed
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
+  };
 
-        <h1 className='head'>Contact Me</h1>
-
-        <div  className="container">
-            
-            <form onSubmit={handleSubmit} className="form">
-                <br/>
-                <div className="name">
-                    
-                    <label for="fullName" id="nameLabel">Full Name</label>
-                    <input
-                     
-                        type="text" 
-                        id="fullName" 
-                        name="fullName"
-                        className="fullName" 
-                        placeholder="Enter Your Name.."
-                        ref={fullNameRef} 
-                        tabindex="1" 
-                    />
-                    
-                </div>
-
-                <div className='email-div'>
-                    <label for="email">Email</label>
-                    <input 
-                    type="email" 
-                    name="email"
-                    id="email"
-                    className="email"
-                    placeholder="example@corp.com"
-                    ref={emailRef}
-                    tabindex="3" 
-                    />
-                </div>
-                <div className='message--div'>
-                    <label for="message">Message</label>
-                    <textarea 
-                    placeholder="Start typing..." 
-                    className="message" 
-                    name="message"
-                    ref={messageRef}
-                    >
-                    </textarea>
-                </div>
-                <button type="submit" className="send">Send</button>
-            </form>
+  return (
+    <>
+      {notification && (
+        <div className={`notification ${notification.type}`}>
+          {notification.message}
         </div>
-        </>
-    )
-}
+      )}
+      <br />
+      <br />
+      <br />
+      <div className="contact-form-container">
+        <h2>Contact Me</h2>
+        <form onSubmit={handleSubmit}>
+          <label htmlFor="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
 
-export default ContactForm
+          <label htmlFor="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+
+          <label htmlFor="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          ></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <br />
+      <br />
+      <br />
+    </>
+  );
+};
+
+export default ContactForm;
