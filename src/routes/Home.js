@@ -1,25 +1,27 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Hero from "../components/Hero";
-import Aboutme from "../components/Aboutme";
-import ContactMe from "../components/ContactMe";
-// import Theme from "../components/Theme";
-import Experience from "../components/Experience";
-import MyTools from "../components/MyTools";
-import Education from "../components/Education";
+import {
+  AboutMe,
+  Contact,
+  Education,
+  Experience,
+  Footer,
+  HeroSection,
+  Navbar,
+  MyTools,
+  MyProject,
+} from "../components/index";
 
 const Home = () => {
   return (
     <div>
       <Navbar />
-      {/* <Theme /> */}
-      <Hero />
-      <Aboutme />
+      <HeroSection />
+      <AboutMe />
       <Experience />
       <MyTools />
-      <Education />
-      <ContactMe />
+      <MyProject />
+      {/* <Education /> */}
+      <Contact />
       <Footer />
     </div>
   );

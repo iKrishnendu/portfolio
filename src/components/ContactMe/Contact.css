@@ -1,0 +1,124 @@
+/* Contact.css */
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px; /* Add some padding for smaller screens */
+}
+
+.contact-container {
+  text-align: center;
+  margin: 40px;
+  color: var(--text-color);
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  max-width: 600px; /* Set a max-width for larger screens */
+}
+
+.contact-container h1 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  color: darkslateblue;
+}
+
+.contact-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contact-container p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  color: var(--text-color);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.contact-button {
+  background-color: var(--text-color);
+  color: var(--card-bg-color);
+  border: 1px solid var(--border-color);
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.contact-button:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  box-shadow: 0 4px 8px var(--shadow-color);
+}
+
+/* Adjustments for tablet screens */
+@media screen and (max-width: 1024px) {
+  .contact-container {
+    width: 70%; /* Increase width for larger tablets */
+  }
+}
+
+/* Adjustments for mobile screens */
+@media screen and (max-width: 768px) {
+  .contact-container {
+    width: 90%; /* Increase width for smaller screens */
+    margin: 20px 0; /* Adjust margins */
+    padding: 15px; /* Adjust padding */
+  }
+
+  .contact-container h1 {
+    font-size: 1.2em; /* Adjust font size */
+  }
+
+  .contact-container h2 {
+    font-size: 1.8em; /* Adjust font size */
+  }
+
+  .contact-container p {
+    font-size: 1em; /* Adjust font size */
+    margin-bottom: 20px; /* Adjust margin */
+    padding: 5px; /* Adjust padding */
+  }
+
+  .contact-button {
+    font-size: 14px; /* Adjust font size */
+    padding: 8px 16px; /* Adjust padding */
+  }
+}
+
+/* Additional adjustments for extra small screens */
+@media screen and (max-width: 480px) {
+  .contact-container {
+    width: 100%; /* Full width */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .contact-container h1 {
+    font-size: 1em; /* Adjust font size */
+  }
+
+  .contact-container h2 {
+    font-size: 1.5em; /* Adjust font size */
+  }
+
+  .contact-container p {
+    font-size: 0.9em; /* Adjust font size */
+  }
+
+  .contact-button {
+    font-size: 12px; /* Adjust font size */
+    padding: 6px 12px; /* Adjust padding */
+  }
+}

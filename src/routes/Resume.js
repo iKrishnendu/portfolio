@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import PDF from "../components/PDF";
+import { Footer, Navbar } from "../components/index";
+
+import PDF from "../lib/PDF";
 import { Link } from "react-router-dom";
 
 const Resume = () => {

@@ -1,0 +1,151 @@
+/* MyProject.css */
+
+.myproject--component {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.myproject-component {
+  padding: 40px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.myproject-component h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.myproject--component h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.myproject--cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.myproject--card {
+  background-color: var(--card-bg-color);
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--shadow-color);
+  padding: 20px;
+  text-align: left;
+  border: 1px solid var(--border-color);
+}
+
+.project--image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project--details {
+  text-align: left;
+}
+
+.myproject--card b {
+  font-size: 18px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.myproject--card p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: var(--p-clr);
+}
+
+.tech-stack {
+  margin-bottom: 10px;
+}
+
+.tech-stack b {
+  font-weight: bold;
+}
+
+.tech {
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: var(--body-bg-color);
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.myproject--buttons {
+  margin-top: 15px;
+}
+
+.myproject--button {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: var(--text-clr);
+  color: var(--btn-clr);
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.myproject--button:hover {
+  background-color: orange;
+  color: white;
+}
+
+/* Adjustments for tablet screens */
+@media screen and (max-width: 1024px) {
+  .myproject--cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Adjustments for mobile screens */
+@media screen and (max-width: 768px) {
+  .myproject--cards {
+    grid-template-columns: 1fr;
+  }
+
+  .myproject-component {
+    padding: 20px; /* Reduce padding */
+  }
+
+  .myproject--card {
+    padding: 15px; /* Reduce padding */
+  }
+
+  .myproject-component h2 {
+    font-size: 1.5rem; /* Reduce font size */
+  }
+
+  .myproject--component h1 {
+    font-size: 1.5rem; /* Reduce font size */
+  }
+
+  .myproject--card b {
+    font-size: 16px; /* Reduce font size */
+  }
+
+  .myproject--card p {
+    font-size: 14px; /* Reduce font size */
+  }
+
+  .tech {
+    font-size: 12px; /* Reduce font size */
+    margin-right: 5px; /* Reduce margin */
+    padding: 3px 6px; /* Reduce padding */
+  }
+
+  .myproject--button {
+    padding: 6px 12px; /* Reduce padding */
+    margin-right: 5px; /* Reduce margin */
+  }
+}

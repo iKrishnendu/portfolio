@@ -1,7 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import Particle from "../components/Particle";
-import Design from "../components/Design";
+import { Navbar } from "../components/index";
 
 const Blogs = () => {
   return (

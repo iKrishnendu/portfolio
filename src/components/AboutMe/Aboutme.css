@@ -1,0 +1,140 @@
+.about-me-section {
+  padding: 50px;
+}
+
+.about-me-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-left: 100px;
+}
+
+.about-me-heading h2 {
+  font-size: 2rem;
+}
+
+.aboutme {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.about--image {
+  flex: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: sticky; */
+  top: 20px;
+}
+.about--image img {
+  height: 20rem;
+  width: auto;
+  border-radius: 50%;
+  transition: transform 0.3s ease, filter 0.3s ease-in-out;
+  filter: grayscale(60%);
+}
+
+.about--image img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+.right-side {
+  flex: 60%;
+  margin-left: 20px;
+}
+
+.card--aboutme-div {
+  background-color: var(--card-bg-color);
+  border: 1px solid var(--border-color);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  transition: transform 0.3s ease;
+}
+
+.card--aboutme-div:hover {
+  transform: translateY(-10px);
+}
+
+.p-aboutme,
+.about--text {
+  text-align: center;
+}
+
+.cse-bg {
+  background: #fd9e9e;
+  padding: 2px 4px;
+  border-radius: 5px;
+  color: black;
+}
+
+.tib-bg {
+  background: #82ca9d;
+  padding: 2px 4px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.card--header {
+  background-color: var(--header-bg-color);
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 10px 10px 0 0;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.green {
+  background-color: green;
+}
+
+.about--body {
+  padding: 20px;
+  background-color: var(--body-bg-color);
+  border-radius: 0 0 10px 10px;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+  .about-me-section {
+    padding: 20px;
+  }
+  .about-me-heading {
+    /* text-align: center; */
+    padding: 0;
+  }
+
+  .aboutme {
+    flex-direction: column;
+  }
+
+  .about--image {
+    margin-bottom: 20px;
+  }
+
+  .right-side {
+    margin-left: 0;
+  }
+
+  .card--aboutme-div {
+    padding: 5px;
+  }
+}

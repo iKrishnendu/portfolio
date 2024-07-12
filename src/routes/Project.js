@@ -1,8 +1,7 @@
 import React from "react";
-import Navbar from "../components/Navbar";
-import MyProject from "../components/MyProject";
-import Footer from "../components/Footer";
-import Github from "../components/Github";
+import { Navbar, MyProject, Footer } from "../components/index";
+
+import Github from "../lib/Github";
 
 const Project = () => {
   return (

@@ -1,0 +1,129 @@
+/* ContactForm.css */
+.contact-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.contact-form-container {
+  width: 90%;
+  height: 90%;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content {
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+
+  text-align: center;
+}
+
+.notification {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.notification.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.notification.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.contact-form-container h2 {
+  margin-bottom: 20px;
+}
+
+.contact-form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form-container label {
+  margin-bottom: 5px;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact-form-container button {
+  background-color: var(--text-color);
+  color: var(--card-bg-color);
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3ms;
+}
+
+.contact-form-container button:hover {
+  background-color: orange;
+  color: var(--bg-color);
+}
+
+.submit-button {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.social-media-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-media-buttons a {
+  color: var(--text-color);
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-media-buttons a:hover {
+  color: orange;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.close-button:hover {
+  color: var(--bg-color);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
