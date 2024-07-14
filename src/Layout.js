@@ -1,5 +1,5 @@
 import React, { Children } from "react";
-import { ContactMe, Footer, Navbar } from "../components/index";
+import { ContactMe, Footer, Navbar } from "./components/index";
 
 const Layout = ({ Children }) => {
   return (

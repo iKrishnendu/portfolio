@@ -10,6 +10,7 @@ import {
   MyTools,
   MyProject,
 } from "../components/index";
+import { VisitCounter } from "../components/Visitors/VisitCounter";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
       <MyProject />
       {/* <Education /> */}
       <Contact />
+      <VisitCounter />
       <Footer />
     </div>
   );

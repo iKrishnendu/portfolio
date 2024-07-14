@@ -1,11 +1,9 @@
-/* Contact.css */
-
 .wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  padding: 20px; /* Add some padding for smaller screens */
+  min-height: 90vh;
+  padding: 20px;
 }
 
 .contact-container {
@@ -15,7 +13,7 @@
   padding: 20px;
   border-radius: 10px;
   width: 50%;
-  max-width: 600px; /* Set a max-width for larger screens */
+  max-width: 600px;
 }
 
 .contact-container h1 {
@@ -63,62 +61,59 @@
   box-shadow: 0 4px 8px var(--shadow-color);
 }
 
-/* Adjustments for tablet screens */
 @media screen and (max-width: 1024px) {
   .contact-container {
-    width: 70%; /* Increase width for larger tablets */
+    width: 70%;
   }
 }
 
-/* Adjustments for mobile screens */
 @media screen and (max-width: 768px) {
   .contact-container {
-    width: 90%; /* Increase width for smaller screens */
-    margin: 20px 0; /* Adjust margins */
-    padding: 15px; /* Adjust padding */
+    width: 90%;
+    margin: 20px 0;
+    padding: 15px;
   }
 
   .contact-container h1 {
-    font-size: 1.2em; /* Adjust font size */
+    font-size: 1.2em;
   }
 
   .contact-container h2 {
-    font-size: 1.8em; /* Adjust font size */
+    font-size: 1.8em;
   }
 
   .contact-container p {
-    font-size: 1em; /* Adjust font size */
-    margin-bottom: 20px; /* Adjust margin */
-    padding: 5px; /* Adjust padding */
+    font-size: 1em;
+    margin-bottom: 20px;
+    padding: 5px;
   }
 
   .contact-button {
-    font-size: 14px; /* Adjust font size */
-    padding: 8px 16px; /* Adjust padding */
+    font-size: 14px;
+    padding: 8px 16px;
   }
 }
 
-/* Additional adjustments for extra small screens */
 @media screen and (max-width: 480px) {
   .contact-container {
-    width: 100%; /* Full width */
-    padding: 10px; /* Adjust padding */
+    width: 100%;
+    padding: 10px;
   }
 
   .contact-container h1 {
-    font-size: 1em; /* Adjust font size */
+    font-size: 1em;
   }
 
   .contact-container h2 {
-    font-size: 1.5em; /* Adjust font size */
+    font-size: 1.5em;
   }
 
   .contact-container p {
-    font-size: 0.9em; /* Adjust font size */
+    font-size: 0.9em;
   }
 
   .contact-button {
-    font-size: 12px; /* Adjust font size */
-    padding: 6px 12px; /* Adjust padding */
+    font-size: 12px;
+    padding: 6px 12px;
   }
 }

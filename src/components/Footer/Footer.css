@@ -30,6 +30,8 @@
   box-shadow: 0 -4px 8px var(--shadow-color);
   z-index: 1000;
   transition: transform 0.3s ease;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .version-popup-content {
@@ -76,7 +78,7 @@
   right: 20px;
   background: none;
   border: none;
-  font-size: 20px;
+  font-size: 24px; /* Increased font size */
   cursor: pointer;
   color: var(--text-color);
 }

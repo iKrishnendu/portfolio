@@ -9,9 +9,10 @@ import ScrollToTop from "./lib/ScrollToTop";
 import Theme from "./theme/Theme";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Resume from "./routes/Resume";
 import AnimatedCursor from "react-animated-cursor";
 import { Blog } from "./components/index";
+import { SpeedInsights } from "@vercel/speed-insights/react";
+
 // ..install aos for animation.. transition
 AOS.init({
   // offset: 200,
@@ -21,17 +22,16 @@ AOS.init({
 function App() {
   return (
     <>
-      {/* <ThemeProvider> */}
       <div className="particle">{/* <Particle/>  */}</div>
       <ScrollToTop />
-      {/* <Theme /> */}
-      {/* <AnimatedCursor
+      {/* 
+      <AnimatedCursor
         innerSize={8}
         outerSize={35}
-        innerScale={1}
+        innerScale={0.5}
         outerScale={2}
         outerAlpha={0}
-        hasBlendMode={true}
+        // hasBlendMode={true}
         innerStyle={{
           backgroundColor: "var(--cursor-color)",
         }}
@@ -45,10 +45,10 @@ function App() {
         <Route path="/project" element={<Project />} />
 
         <Route path="/blogs" element={<Blogs />} />
-        <Route path="/resume" element={<Resume />} />
         <Route path="/blog" element={<Blog />} />
       </Routes>
-      {/* </ThemeProvider> */}
+
+      <SpeedInsights />
     </>
   );
 }

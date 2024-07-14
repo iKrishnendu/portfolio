@@ -10,3 +10,4 @@ export { HeroSection } from "./HeroSection/HeroSection";
 export { Navbar } from "./Navbar/Navbar";
 export { MyProject } from "./Project/MyProject";
 export { MyTools } from "./Tools/MyTools";
+export { VisitCounter } from "./Visitors/VisitCounter";

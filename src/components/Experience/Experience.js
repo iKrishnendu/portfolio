@@ -4,24 +4,24 @@ import "./Experience.css";
 const experienceData = [
   {
     company: "0101DigitAll",
-    role: "Software Developer Intern",
-    duration: "June 2023 - Present",
+    role: "Full Stack Developer Intern",
+    duration: "Feb 2024 - Present",
     description: [
-      "Working on various front-end technologies including React and Next.js.",
-      "Developed custom solutions for Salesforce clients using Apex and Visualforce.",
-      "Worked on integrating third-party APIs for data synchronization.",
+      "Working on various front-end technologies including React and Next.js, developing responsive and dynamic web applications with a focus on user experience and performance optimization.",
+      "Built and maintained APIs using Node.js and Express, ensuring seamless communication between the frontend and backend, and integrating third-party services to enhance functionality.",
+      "Designed and implemented low-level components, collaborating with cross-functional teams on real-time projects, conducting code reviews, and following Agile methodologies to deliver high-quality software solutions.",
     ],
   },
   {
-    company: "Salesforce",
-    role: "Intern",
-    duration: "January 2023 - May 2023",
+    company: "IBM Skillbuild",
+    role: "Data Science Intern",
+    duration: "Nov 2023 - Dec 2023",
     description: [
-      "Developed custom solutions for Salesforce clients using Apex and Visualforce.",
-      "Worked on integrating third-party APIs for data synchronization.",
+      "Participated in a one-month program organized by IBM SkillBuild and CSRBox, gaining foundational knowledge in data science and analytics.",
+      "Successfully completed the program and received a certificate of achievement.",
+      "Worked on practical data science projects, applying statistical analysis and machine learning techniques to real-world datasets.",
     ],
   },
-  // Add more experiences as needed
 ];
 
 export const Experience = () => {
@@ -59,7 +59,9 @@ export const Experience = () => {
           <p>{selectedExperience.duration}</p>
           <ul>
             {selectedExperience.description.map((point, index) => (
-              <li key={index}>{point}</li>
+              <li key={index}>
+                <p>{point}</p>
+              </li>
             ))}
           </ul>
         </div>

@@ -2,8 +2,6 @@ import React from "react";
 import "./MyProject.css";
 import { BsGithub } from "react-icons/bs";
 import { SiDarkreader } from "react-icons/si";
-
-// Import project images
 import kbytes from "../../assets/k-bytes.png";
 import portfolio from "../../assets/potfolio.png";
 import githubApi from "../../assets/github-api.png";

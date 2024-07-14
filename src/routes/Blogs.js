@@ -7,9 +7,8 @@ const Blogs = () => {
       <div style={{ height: "100vh" }}>
         Blogs : <b>Coming Soon</b>
       </div>
-      {/* <Particle/> */}
+
       <Navbar />
-      {/* <Design/> */}
     </>
   );
 };

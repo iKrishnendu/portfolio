@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BsEnvelope } from "react-icons/bs";
-import "./Contact.css"; // Assuming you create a CSS file for styling
+import "./Contact.css";
 import { ContactForm } from "../ContactForm/ContactForm";
 
 export const Contact = () => {

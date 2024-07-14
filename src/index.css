@@ -91,6 +91,10 @@ button:hover {
   cursor: pointer;
 }
 
+p {
+  line-height: 1.6;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -100,12 +104,6 @@ html {
   /* background-color: black; */
 }
 
-.particle {
-  position: absolute;
-  height: 100%;
-  /* background-repeat:no-repeat; */
-
-  background-size: cover;
-
-  background-position: center;
+.VisitCounter {
+  text-align: center;
 }
