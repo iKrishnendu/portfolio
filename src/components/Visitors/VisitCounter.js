@@ -1,76 +1,92 @@
 import React, { useEffect, useState } from "react";
-import { db } from "../../utils/firebase"; // Adjust the path as per your project structure
+import { db } from "../../utils/firebase";
 import {
   doc,
   getDoc,
   setDoc,
-  addDoc,
-  collection,
-  query,
-  where,
-  getDocs,
-  Timestamp,
+  updateDoc,
+  runTransaction,
 } from "firebase/firestore";
 
 export const VisitCounter = () => {
-  const [totalUniqueVisits, setTotalUniqueVisits] = useState(0);
+  const [totalVisits, setTotalVisits] = useState(0);
 
   useEffect(() => {
-    const visitCollection = "visits";
+    const visitCountKey = "visitCount";
     const lastVisitDateKey = "lastVisitDate";
     const visitorIdKey = "visitorId";
+    const visitorExpirationDateKey = "visitorExpirationDate";
+    const expirationDays = 7;
 
-    const today = new Date();
-    const startDate = new Date(today);
-    startDate.setDate(today.getDate() - 7); // 7 days ago
+    const today = new Date().toISOString().split("T")[0];
+    const lastVisitDate = localStorage.getItem(lastVisitDateKey);
+    const visitorId = localStorage.getItem(visitorIdKey);
+    const visitorExpirationDate = localStorage.getItem(
+      visitorExpirationDateKey
+    );
 
     const getUniqueId = () => "_" + Math.random().toString(36).substr(2, 9);
 
-    // Function to get unique visits within the last 7 days
-    const getUniqueVisits = async () => {
-      const visitDocRef = doc(db, visitCollection, "visitData");
-      const visitorId = localStorage.getItem(visitorIdKey) || getUniqueId();
-
-      // Store visitor ID in localStorage if not already present
-      localStorage.setItem(visitorIdKey, visitorId);
-
-      // Add a new visit to Firestore
-      await addDoc(collection(db, visitCollection), {
-        visitorId,
-        timestamp: Timestamp.fromDate(today),
+    const incrementVisitCount = async () => {
+      const visitDocRef = doc(db, "visits", "count");
+      await runTransaction(db, async (transaction) => {
+        const docSnap = await transaction.get(visitDocRef);
+        if (!docSnap.exists()) {
+          throw "Document does not exist!";
+        }
+        const newCount = docSnap.data().count + 1;
+        transaction.update(visitDocRef, { count: newCount });
+        setTotalVisits(newCount);
       });
-
-      // Query unique visits within the last 7 days
-      const q = query(
-        collection(db, visitCollection),
-        where("timestamp", ">=", Timestamp.fromDate(startDate))
-      );
-      const querySnapshot = await getDocs(q);
-      const uniqueVisitors = new Set();
-
-      querySnapshot.forEach((doc) => {
-        const data = doc.data();
-        uniqueVisitors.add(data.visitorId);
-      });
-
-      setTotalUniqueVisits(uniqueVisitors.size);
     };
 
-    getUniqueVisits();
-  }, []); // Empty dependency array means this useEffect runs once after the initial render
+    const getVisitCount = async () => {
+      const visitDocRef = doc(db, "visits", "count");
+      const docSnap = await getDoc(visitDocRef);
+      if (docSnap.exists()) {
+        setTotalVisits(docSnap.data().count);
+      }
+    };
+
+    const initializeVisitCount = async () => {
+      const visitDocRef = doc(db, "visits", "count");
+      const docSnap = await getDoc(visitDocRef);
+      if (!docSnap.exists()) {
+        await setDoc(visitDocRef, { count: 0 });
+      }
+    };
+
+    const handleVisits = async () => {
+      await initializeVisitCount();
+
+      const currentDate = new Date();
+      const expirationDate = new Date(visitorExpirationDate);
+
+      if (!visitorId || currentDate > expirationDate) {
+        // Generate a new unique ID and set the new expiration date
+        localStorage.setItem(visitorIdKey, getUniqueId());
+        const newExpirationDate = new Date();
+        newExpirationDate.setDate(newExpirationDate.getDate() + expirationDays);
+        localStorage.setItem(
+          visitorExpirationDateKey,
+          newExpirationDate.toISOString().split("T")[0]
+        );
+      }
+
+      if (lastVisitDate !== today) {
+        // Update the last visit date to today
+        localStorage.setItem(lastVisitDateKey, today);
+        await incrementVisitCount();
+      }
+      await getVisitCount();
+    };
+
+    handleVisits();
+  }, []);
 
   return (
     <div className="VisitCounter">
-      Total unique visits in the last 7 days: {totalUniqueVisits}
-      <br />
-      <small>
-        <i>
-          This count represents the total number of unique visits to the site
-          over the past 7 days.
-          <br /> Each unique visit is counted once per visitor within this
-          period. The count is updated as new visits occur.
-        </i>
-      </small>
+      Total number unique of visits: {totalVisits}
     </div>
   );
 };
