@@ -4,77 +4,73 @@ import {
   doc,
   getDoc,
   setDoc,
-  updateDoc,
-  runTransaction,
+  addDoc,
+  collection,
+  query,
+  where,
+  getDocs,
+  Timestamp,
 } from "firebase/firestore";
 
 export const VisitCounter = () => {
-  const [totalVisits, setTotalVisits] = useState(0);
+  const [totalUniqueVisits, setTotalUniqueVisits] = useState(0);
 
   useEffect(() => {
-    const visitCountKey = "visitCount";
+    const visitCollection = "visits";
     const lastVisitDateKey = "lastVisitDate";
     const visitorIdKey = "visitorId";
 
-    const today = new Date().toISOString().split("T")[0]; // Get today's date in YYYY-MM-DD format
-    const lastVisitDate = localStorage.getItem(lastVisitDateKey);
-    const visitorId = localStorage.getItem(visitorIdKey);
+    const today = new Date();
+    const startDate = new Date(today);
+    startDate.setDate(today.getDate() - 7); // 7 days ago
 
-    // Function to get a unique identifier for the visitor
     const getUniqueId = () => "_" + Math.random().toString(36).substr(2, 9);
 
-    // Function to increment visit count in Firestore
-    const incrementVisitCount = async () => {
-      const visitDocRef = doc(db, "visits", "count");
-      await runTransaction(db, async (transaction) => {
-        const docSnap = await transaction.get(visitDocRef);
-        if (!docSnap.exists()) {
-          throw "Document does not exist!";
-        }
-        const newCount = docSnap.data().count + 1;
-        transaction.update(visitDocRef, { count: newCount });
-        setTotalVisits(newCount);
+    // Function to get unique visits within the last 7 days
+    const getUniqueVisits = async () => {
+      const visitDocRef = doc(db, visitCollection, "visitData");
+      const visitorId = localStorage.getItem(visitorIdKey) || getUniqueId();
+
+      // Store visitor ID in localStorage if not already present
+      localStorage.setItem(visitorIdKey, visitorId);
+
+      // Add a new visit to Firestore
+      await addDoc(collection(db, visitCollection), {
+        visitorId,
+        timestamp: Timestamp.fromDate(today),
       });
+
+      // Query unique visits within the last 7 days
+      const q = query(
+        collection(db, visitCollection),
+        where("timestamp", ">=", Timestamp.fromDate(startDate))
+      );
+      const querySnapshot = await getDocs(q);
+      const uniqueVisitors = new Set();
+
+      querySnapshot.forEach((doc) => {
+        const data = doc.data();
+        uniqueVisitors.add(data.visitorId);
+      });
+
+      setTotalUniqueVisits(uniqueVisitors.size);
     };
 
-    // Function to get the visit count from Firestore
-    const getVisitCount = async () => {
-      const visitDocRef = doc(db, "visits", "count");
-      const docSnap = await getDoc(visitDocRef);
-      if (docSnap.exists()) {
-        setTotalVisits(docSnap.data().count);
-      }
-    };
-
-    // Initialize the visit count if it does not exist
-    const initializeVisitCount = async () => {
-      const visitDocRef = doc(db, "visits", "count");
-      const docSnap = await getDoc(visitDocRef);
-      if (!docSnap.exists()) {
-        await setDoc(visitDocRef, { count: 0 });
-      }
-    };
-
-    // Check if the visitor is new today
-    const handleVisits = async () => {
-      await initializeVisitCount();
-      if (!visitorId) {
-        // Generate and store a unique visitor ID
-        localStorage.setItem(visitorIdKey, getUniqueId());
-      }
-
-      if (lastVisitDate !== today) {
-        // Update the last visit date to today
-        localStorage.setItem(lastVisitDateKey, today);
-        await incrementVisitCount();
-      }
-      await getVisitCount();
-    };
-
-    handleVisits();
-  }, []); // Remove totalVisits from dependencies
+    getUniqueVisits();
+  }, []); // Empty dependency array means this useEffect runs once after the initial render
 
   return (
-    <div className="VisitCounter">Total number of visits: {totalVisits}</div>
+    <div className="VisitCounter">
+      Total unique visits in the last 7 days: {totalUniqueVisits}
+      <br />
+      <small>
+        <i>
+          This count represents the total number of unique visits to the site
+          over the past 7 days.
+          <br /> Each unique visit is counted once per visitor within this
+          period. The count is updated as new visits occur.
+        </i>
+      </small>
+    </div>
   );
 };

@@ -11,3 +11,4 @@ export { Navbar } from "./Navbar/Navbar";
 export { MyProject } from "./Project/MyProject";
 export { MyTools } from "./Tools/MyTools";
 export { VisitCounter } from "./Visitors/VisitCounter";
+export { BlogSection } from "./Blog-Section/BlogSection";

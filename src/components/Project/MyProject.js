@@ -2,10 +2,12 @@ import React from "react";
 import "./MyProject.css";
 import { BsGithub } from "react-icons/bs";
 import { SiDarkreader } from "react-icons/si";
-import kbytes from "../../assets/k-bytes.png";
-import portfolio from "../../assets/potfolio.png";
-import githubApi from "../../assets/github-api.png";
-import speedtest from "../../assets/speedtest.png";
+import kbytes from "../../assets/image/k-bytes.png";
+import portfolio from "../../assets/image/potfolio.png";
+import githubApi from "../../assets/image/github-api.png";
+import speedtest from "../../assets/image/speedtest.png";
+import spotai from "../../assets/image/spotai.png";
+import splitmoney from "../../assets/image/splitmoney.png";
 
 const initialProjects = [
   {
@@ -13,9 +15,9 @@ const initialProjects = [
     title: "Sahoo-blog | The blog App",
     description:
       "A full stack web application using MERN stack for blogging. Implemented user authentication, CRUD operations for posts, and responsive UI design.",
-    techStack: ["HTML", "CSS", "JavaScript", "React"],
-    liveUrl: "https://example.com/sahoo-blog",
-    githubUrl: "https://github.com/sahoo-blog",
+    techStack: ["MERN", "JavaScript", "Tailwind", "Cloudinary"],
+    liveUrl: "https://sahoo.vercel.app/blog",
+    githubUrl: "https://github.com/iKrishnendu/sahoo-blog",
     madeAt: "Personal",
   },
   {
@@ -23,9 +25,9 @@ const initialProjects = [
     title: "Sahoo | Portfolio website",
     description:
       "A personal portfolio showcasing my projects and skills. Built with React, it features a responsive design, project sections, and contact form integration.",
-    techStack: ["HTML", "CSS", "JavaScript"],
-    liveUrl: "https://example.com/sahoo-portfolio",
-    githubUrl: "https://github.com/sahoo-portfolio",
+    techStack: ["React", "JavaScript", "Tailwind", "Firebase"],
+    liveUrl: "https://sahoo.vercel.app",
+    githubUrl: "https://github.com/iKrishnendu/portfolio",
     madeAt: "Personal",
   },
   {
@@ -33,9 +35,9 @@ const initialProjects = [
     title: "Github API Project",
     description:
       "An application utilizing GitHub's API to fetch user repositories. Implemented search functionality, pagination, and responsive design using React and Axios.",
-    techStack: ["HTML", "CSS", "JavaScript", "React", "GitHub API"],
-    liveUrl: "https://example.com/github-api-project",
-    githubUrl: "https://github.com/github-api-project",
+    techStack: ["React", "JavaScript", "Tailwind", "GitHub API"],
+    liveUrl: "https://the-github-api.vercel.app/",
+    githubUrl: "https://github.com/iKrishnendu/github-api",
     madeAt: "Personal",
   },
   {
@@ -44,39 +46,30 @@ const initialProjects = [
     description:
       "A web application to test internet speed. Built using React and integrated with a speed testing API. Features real-time speed calculation and responsive UI.",
     techStack: ["HTML", "CSS", "JavaScript"],
-    liveUrl: "https://example.com/speedtest-app",
-    githubUrl: "https://github.com/speedtest-app",
+    liveUrl:
+      "https://github.com/iKrishnendu/speed-test-chrome-extension/blob/main/README.md",
+    githubUrl: "https://github.com/iKrishnendu/speed-test-chrome-extension",
     madeAt: "Personal",
   },
   {
-    image: speedtest,
-    title: "SpeedTest App",
+    image: splitmoney,
+    title: "SpliMate",
     description:
       "A web application to test internet speed. Built using React and integrated with a speed testing API. Features real-time speed calculation and responsive UI.",
-    techStack: ["HTML", "CSS", "JavaScript"],
+    techStack: ["MERN", "JavaScript", "Tailwind", "Chart"],
     liveUrl: "https://example.com/speedtest-app",
-    githubUrl: "https://github.com/speedtest-app",
+    githubUrl: "https://github.com/iKrishnendu/splitmate",
     madeAt: "Personal",
   },
   {
-    image: speedtest,
-    title: "SpeedTest App",
+    image: spotai,
+    title: "Spot AI",
     description:
-      "A web application to test internet speed. Built using React and integrated with a speed testing API. Features real-time speed calculation and responsive UI.",
-    techStack: ["HTML", "CSS", "JavaScript"],
-    liveUrl: "https://example.com/speedtest-app",
-    githubUrl: "https://github.com/speedtest-app",
-    madeAt: "Personal",
-  },
-  {
-    image: speedtest,
-    title: "SpeedTest App",
-    description:
-      "A web application to test internet speed. Built using React and integrated with a speed testing API. Features real-time speed calculation and responsive UI.",
-    techStack: ["HTML", "CSS", "JavaScript"],
-    liveUrl: "https://example.com/speedtest-app",
-    githubUrl: "https://github.com/speedtest-app",
-    madeAt: "Personal",
+      "A comprehensive website featuring over a thousand AI tools. Discover tools for music, creativity, and more, tailored to meet your diverse needs.",
+    techStack: ["Next js", "TypeScript", "Node", "Express"],
+    liveUrl: "https://spotai.tech/",
+    githubUrl: "/projects/spot-ai",
+    madeAt: "Professonal",
   },
 ];
 

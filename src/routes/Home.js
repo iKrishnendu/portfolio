@@ -9,6 +9,7 @@ import {
   Navbar,
   MyTools,
   MyProject,
+  BlogSection,
 } from "../components/index";
 import { VisitCounter } from "../components/Visitors/VisitCounter";
 
@@ -23,6 +24,7 @@ const Home = () => {
       <MyProject />
       {/* <Education /> */}
       <Contact />
+      {/* <BlogSection /> */}
       <VisitCounter />
       <Footer />
     </div>

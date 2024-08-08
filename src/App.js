@@ -12,6 +12,7 @@ import "aos/dist/aos.css";
 import AnimatedCursor from "react-animated-cursor";
 import { Blog } from "./components/index";
 import { SpeedInsights } from "@vercel/speed-insights/react";
+import ErrorPage from "./routes/ErrorPage";
 
 // ..install aos for animation.. transition
 AOS.init({
@@ -22,30 +23,14 @@ AOS.init({
 function App() {
   return (
     <>
-      <div className="particle">{/* <Particle/>  */}</div>
       <ScrollToTop />
-      {/* 
-      <AnimatedCursor
-        innerSize={8}
-        outerSize={35}
-        innerScale={0.5}
-        outerScale={2}
-        outerAlpha={0}
-        // hasBlendMode={true}
-        innerStyle={{
-          backgroundColor: "var(--cursor-color)",
-        }}
-        outerStyle={{
-          border: "3px solid var(--cursor-color)",
-        }}
-      /> */}
 
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/project" element={<Project />} />
-
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
 
       <SpeedInsights />

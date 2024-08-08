@@ -1,10 +1,9 @@
 import React from "react";
 // import { MdWork } from "react-icons/md";
 // import Logo from "../assets/logo.png";
-import Vmas from "../../assets/vmas.jpg";
-import Lhs from "../../assets/lhs.jpg";
-import Tib from "../../assets/tib.jpg";
-import Intern from "../../assets/salesforce-logo.png";
+import Vmas from "../../assets/image/vmas.jpg";
+import Lhs from "../../assets/image/lhs.jpg";
+import Tib from "../../assets/image/tib.jpg";
 import "./Education.css";
 // import ScrollAnimation from "../ScrollAnimation";
 
@@ -20,7 +19,7 @@ export function Education() {
         <div className="the--main--edu" data-aos="fade-up">
           <div className="edu--container--left">
             <div className="edu--img" data-aos="fade-up">
-              <img src={Intern} className="edu--images" />
+              {/* <img src={Intern} className="edu--images" /> */}
             </div>
             <div className="edu--img" data-aos="fade-up">
               <img src={Tib} className="edu--images" />

@@ -1,6 +1,5 @@
 import React from "react";
 import "./Aboutme.css";
-import Logo from "../../assets/logo.png";
 import Myphoto from "../../assets/image/krishnendu.jpeg";
 import { Link } from "react-router-dom";
 export const AboutMe = () => {
