@@ -1,0 +1,76 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 470px;
+  background-color: var(--navbar-bg-color);
+  border-bottom: 1px solid var(--border-color);
+  padding: 10px 0;
+  box-shadow: 0 2px 4px var(--shadow-color);
+  z-index: 1000;
+  border-radius: 25px;
+  backdrop-filter: blur(8px);
+}
+
+.navbar-center {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin-right: 20px;
+}
+
+.navbar button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--text-color);
+  padding: 6px 10px;
+  border-radius: 20px;
+  transition: color 0.2s ease, background-color 0.3s ease;
+}
+
+.navbar button:hover,
+.navbar button:focus {
+  color: var(--text-color);
+}
+
+.navbar .active button {
+  font-weight: bold;
+  background-color: var(--text-color);
+  color: var(--card-bg-color);
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media screen and (max-width: 481px) {
+  .navbar {
+    max-width: 450px;
+    width: 95%;
+    padding: 5px 0;
+    align-items: center;
+  }
+  .navbar li {
+    margin-right: 5px;
+  }
+  .navbar button {
+    font-size: 14px; /* Reduce font size */
+    padding: 4px 8px;
+  }
+}

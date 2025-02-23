@@ -1,0 +1,13 @@
+export { AboutMe } from "./section/AboutMe/Aboutme";
+export { Comet } from "./common/Comet/Comet";
+export { ContactForm } from "./section/Contact/ContactForm/ContactForm";
+export { Contact } from "./section/Contact/ContactMe/ContactMe";
+export { Education } from "./section/Education/Education";
+export { Experience } from "./section/Experience/Experience";
+export { Footer } from "./common/Footer/Footer";
+export { HeroSection } from "./section/HeroSection/HeroSection";
+export { Navbar } from "./common/Navbar/Navbar";
+export { MyProject } from "./section/Project/MyProject";
+export { MyTools } from "./section/Tools/MyTools";
+export { VisitCounter } from "./common/Visitors/VisitCounter";
+export { BlogSection } from "./Blog-Section/BlogSection";

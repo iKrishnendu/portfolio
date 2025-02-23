@@ -1,0 +1,18 @@
+.theme-css {
+  position: fixed;
+  /* top: 10px; */
+  right: 3px;
+  /* z-index: 3; */
+  overflow: hidden;
+}
+.theme-css > .resume-download {
+  font-size: x-large;
+  font: bold;
+  padding: 0px 10px;
+  color: var(--text-clr);
+}
+.switch-theme-button {
+  background-color: transparent;
+  border: none;
+  font-size: large;
+}
